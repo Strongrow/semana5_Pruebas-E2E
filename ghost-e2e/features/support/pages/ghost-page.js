@@ -50,7 +50,7 @@ exports.ghost = {
     lista_tags_name:function () {
         //const x ="[href='#/tags/"+""+tag_name+"/']";
         //console.log("++++++++++++ "+x);
-        return select('[href="#/tags/nuevo-tag-13-2/"]');
+        return select('[href="#/tags/nuevo-tag-13-3/"]');
     },
 
     boton_delete_tag:function () {
@@ -63,7 +63,10 @@ exports.ghost = {
         return select('[data-test-button="confirm"]');
     },
     
-    
+    boton_delete_tag_cancelar:function () {
+        
+        return select('[data-test-button="cancel"]');
+    },
 
 
 };
