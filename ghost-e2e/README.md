@@ -33,9 +33,10 @@ Integración de pruebas sobre Ghost.
 
 ## Instalación 
 
-1. Asegurarse de tener [Node.js](https://nodejs.org/) instalado
-2. Navigar a la raíz del repositorio
-3. Usar el comando `npm install` 
+1. Asegurarse de tener ghost ejecutado en http://localhost:2368/ghost/
+2. Asegurarse de tener [Node.js](https://nodejs.org/) instalado
+3. Navigar a la raíz del repositorio
+4. Usar el comando `npm install` 
 
 ## Ejecutar los tests
 
