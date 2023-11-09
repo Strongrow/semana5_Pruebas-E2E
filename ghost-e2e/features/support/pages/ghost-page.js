@@ -47,12 +47,22 @@ exports.ghost = {
         return select('[data-test-button="save"]');
     },
     
-    lista_tags_name:function (tag_name) {
-        const x ="[href='#/tags/"+""+tag_name+"/']";
+    lista_tags_name:function () {
+        //const x ="[href='#/tags/"+""+tag_name+"/']";
         //console.log("++++++++++++ "+x);
-        return select('[href="#/tags/nuevo-tag-14/"]');
+        return select('[href="#/tags/nuevo-tag-13-2/"]');
     },
 
+    boton_delete_tag:function () {
+        
+        return select('[data-test-button="delete-tag"]');
+    },
+
+    boton_delete_tag_confirmar:function () {
+        
+        return select('[data-test-button="confirm"]');
+    },
+    
     
 
 
