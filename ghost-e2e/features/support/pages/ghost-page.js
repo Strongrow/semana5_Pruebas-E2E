@@ -26,6 +26,10 @@ exports.ghost = {
     menuTags: function () {
         return select('[href="#/tags/"]');
     },
+
+    menuPost: function () {
+        return select('[href="#/posts/"]');
+    },
     
     botonNewTag: function () {
         return select('[href="#/tags/new/"]');
@@ -68,5 +72,15 @@ exports.ghost = {
         return select('[data-test-button="cancel"]');
     },
 
+    
+    boton_editar_post_draft:function () {
+        
+        return select('[data-test-post-id="6545db8b64420c0a1c9a51e0"]');
+    },
 
+    text_area_titulo_post_draft:function () {
+        return select('[placeholder="Post title"]');
+    },
+
+  
 };
