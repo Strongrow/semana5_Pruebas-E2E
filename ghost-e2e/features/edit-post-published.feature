@@ -1,4 +1,4 @@
-Feature: Editar un post no publicado
+Feature: Editar un post  publicado
     Como usuario quiero logearme en el sistema ghost y poder editar un post que ya ha sido publicado
     Scenario: Editar un post publicado
         Given Home de ghost
