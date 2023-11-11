@@ -63,10 +63,11 @@ after(() => {
     const videoFilePath = path.join('videos', videoFileName);
 
     //if (fs.existsSync(videoFilePath)) {
-      const outputPath = path.join(__dirname, 'cypress', 'videos', videoFileName);
-      //fs.renameSync(videoFilePath, outputPath);
+    const outputPath = path.join(__dirname, 'cypress', 'videos', videoFileName);
+    //fs.renameSync(videoFilePath, outputPath);
 
-      console.log(`Video exportado a: ${outputPath}`);
-   // }
+    console.log(`Video exportado a: ${outputPath}`);
+    // }
+
   }
 });

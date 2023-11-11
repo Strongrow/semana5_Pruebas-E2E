@@ -3,6 +3,9 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   env: {
     video: true,
+    nombreTag: "Nuevo Tag",
+    colorTag: "2eb24b",
+    descripcionTag: "Descripcion ejemplo ...."
   },
   e2e: {
     setupNodeEvents(on, config) {
