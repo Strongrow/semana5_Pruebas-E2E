@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "ghost-cli": "^1.25.3"
+  }
+}
