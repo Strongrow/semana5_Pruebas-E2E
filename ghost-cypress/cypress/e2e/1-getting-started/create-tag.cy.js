@@ -8,7 +8,7 @@ import LoginPage from '../../support/page-objects/LoginPage';
 
 describe('Creacion de Tag', () => {
 
-    it('Logearse luego ir al menu tags', () => {
+    it('Logearse, ir al menu tags, llenar los campo y guardar', () => {
         LoginPage.visit();
         LoginPage.fillUsername('p.diazp@uniandes.edu.co');
         LoginPage.fillPassword('123456789=');
@@ -19,27 +19,17 @@ describe('Creacion de Tag', () => {
         cy.wait(2000);
         cy.get('input#tag-name').type("Nuevo Tag");
         cy.wait(2000);
-        cy.get('input#tag-name').type("Nuevo Tag");
-        cy.wait(2000);
-         cy.get('[data-test-input="accentColor"]').type("2eb24b");
+        cy.get('[data-test-input="accentColor"]').type("2eb24b");
         cy.wait(2000);
         cy.get('[data-test-input="tag-description"]').type("Ejemplo descripcion ");
+        cy.wait(2000);
+        cy.get('[data-test-button="save"]').click(); 
+        cy.wait(2000);
+        cy.get('[href="#/tags/"]').first().click();
+
     });
 
     
-/*
-    it('Diligenciar el campo description {string}', () => {
-
-    });
-
-    it('Dar click en el boton save', () => {
-
-    });
-
-    it('<Volver al menu Tag', () => {
-
-    });
-*/
 });
 
 
