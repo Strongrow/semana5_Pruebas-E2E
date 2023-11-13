@@ -1,9 +1,9 @@
 # Autores
 
-Javier Andrés Acevedo  ja.acevedob1@uniandes.edu.co
-Publio Diaz p.diazp@uniandes.edu.co
-Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co
-Lucas Omar Blandon   l.blandon@uniandes.edu.co
+Javier Andrés Acevedo  ja.acevedob1@uniandes.edu.co <br>
+Publio Diaz p.diazp@uniandes.edu.co <br>
+Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
+Lucas Omar Blandon   l.blandon@uniandes.edu.co <br>
 
 # Descarga de contenido y ejecución de test
 
