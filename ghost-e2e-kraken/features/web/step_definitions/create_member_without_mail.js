@@ -56,7 +56,7 @@ When("I click Setting", async function () {
 });
 
 When("I click Setting delete", async function () {
-  let element = await this.driver.$(".mr2");
+  let element = await this.driver.$("[data-test-button='delete-member']");
   return await element.click();
 });
 

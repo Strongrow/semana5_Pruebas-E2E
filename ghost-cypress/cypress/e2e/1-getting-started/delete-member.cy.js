@@ -5,38 +5,23 @@ const { spawnSync } = require("child_process");
 import dayjs from "dayjs";
 import LoginPage from "../../support/page-objects/LoginPage";
 
-describe("Creacion de Tag", () => {
-  it("Logearse luego ir al menu tags", () => {
+describe("Creacion de Miembro", () => {
+  it("Logearse luego ir al menu Member", () => {
     LoginPage.visit();
     LoginPage.fillUsername("jc.rodriguez2345@uniandes.edu.co");
     LoginPage.fillPassword("Aa1o3o6349oo+++");
     LoginPage.clickLoginButton();
-    cy.get('[href="#/tags/"]').click();
     cy.wait(2000);
-    cy.get('[href="#/tags/new/"]').click();
+    cy.get('[href="#/members/"]').first().click();
     cy.wait(2000);
-    cy.get("input#tag-name").type("Nuevo Tag");
+    cy.get('[href="#/members/65513e376fd69e0e702a239c/"]').first().click();
     cy.wait(2000);
-    cy.get("input#tag-name").type("Nuevo Tag");
+    cy.get('button[data-test-button="member-actions"]').click();
     cy.wait(2000);
-    cy.get('[data-test-input="accentColor"]').type("2eb24b");
+    cy.get('[data-test-button="delete-member"]').click();
     cy.wait(2000);
-    cy.get('[data-test-input="tag-description"]').type("Ejemplo descripcion ");
+    cy.get('[data-test-button="confirm"]').click();
   });
-
-  /*
-    it('Diligenciar el campo description {string}', () => {
-
-    });
-
-    it('Dar click en el boton save', () => {
-
-    });
-
-    it('<Volver al menu Tag', () => {
-
-    });
-*/
 });
 
 after(() => {
