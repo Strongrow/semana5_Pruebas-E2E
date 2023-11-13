@@ -1,0 +1,28 @@
+Pros y contras Cypress
+
+Pros
+	Cypress permite el uso de herramientas de video y imagen que 
+	facilitan el desarrollo del las pruebas, ademas la intefaz grafica 
+	es muy detallada, tiene un inspector de elementos del DOM que facilita 
+	la construccion de los escenario
+	
+	Tambien es importante destacar la docuemntación que posee Cypress, es una gran 
+	comunidad con una gran contenido que permite su facil aprendizaje
+
+	Por ultimo, Cypress permite implementar el patron Page Object en el desarrollo 
+	de las pruebas E2E, este patron nos permite agilizar el proceso del desarrollo 
+	de las pruebas en ambientes cambiantes y alguno de ellos con repeticion constante 
+	de los pasos.
+
+Contras
+
+	Cypress, limita la pruebas cuando se cambia la url o se encuentran iframe y o nuevas 
+	ventanas, esto genera dificultad para relizar el proceso cuando los casos de pruebas 
+	necesariamente estan ligados a cambios relacionados con pops up o contenido emebebido 
+
+	
+
+	
+
+
+ 
