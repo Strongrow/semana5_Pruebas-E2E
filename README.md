@@ -1,3 +1,10 @@
+# Autores
+
+Javier Andrés Acevedo  ja.acevedob1@uniandes.edu.co
+Publio Diaz p.diazp@uniandes.edu.co
+Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co
+Lucas Omar Blandon   l.blandon@uniandes.edu.co
+
 # Descarga de contenido y ejecución de test
 
 Para este repositorio se tienen destinadas varias carpetas las cuales contienen el desarrollo de pruebas e2e sobre Ghost.<br>
