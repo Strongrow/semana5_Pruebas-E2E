@@ -12,7 +12,7 @@ Edicion tags <br>
 Creacion de tags <br>
 Creacion de suscripciones <br>
 Funcionalidad e2e login <br>
-Administracion de miembros <br>
+Creacion de miembros <br>
 
 # Scenarios
 
