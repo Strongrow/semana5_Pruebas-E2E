@@ -1,38 +1,45 @@
-# Nombre del Proyecto
+# Pruebas a Ghost con Kranken
 
-Breve descripción de tu proyecto.
+Kraken is an open source automated android and web E2E testing tool that supports and validates scenarios that involve the inter-communication between two or more users. It works in a Black Box manner meaning that it is not required to have access to the source code of the application but instead it can be run with the APK (Android package file format) and web page URL. Kraken uses signaling for coordinating the communication between the devices using a file based protocol.
 
 ## Instalación
 
-Instrucciones detalladas sobre cómo instalar y configurar tu proyecto, incluyendo Kraken.
+# Requisitos previos
+- SDK de Android (ADB y AAPT configurados)
+- apio
+- NodeJS (Versión ≥ 12) (Aunque en la documentación oficial indical que cualquier version mayor a la 12 en la experiencia corre con la version 16.20.2 de node)
+- Java
 
-### Requisitos Previos
+Compruebe si todos los requisitos previos están instalados
+Kraken ofrece el siguiente comando para verificar si toda la configuración requerida antes de ejecutar Kraken está instalada correctamente.
 
-Lista de cualquier software necesario para instalar y ejecutar tu proyecto, como Node.js, npm, etc.
+kraken-node doctor
 
-### Instalación de Kraken
+### Writing your first test
 
-Pasos para instalar Kraken:
+## Crear proyecto NodeJS
+npm init -y
+Instalar Kraken
+npm install kraken-node --save
+## Generar esqueleto de características de pepino
+Debe generar el esqueleto de características del pepino donde se guardarán sus pruebas. Para lograr esto debes ejecutar.
 
-### Ejemplo de Sección de Instalación de Kraken
-
-Aquí te dejo un ejemplo de cómo podrías escribir la sección de instalación de Kraken en tu `README.md`:
-
-````markdown
-## Instalación
-
-Antes de instalar este proyecto, asegúrate de tener [Node.js](https://nodejs.org/) y npm instalados. Puedes verificar esto con los siguientes comandos:
-
-```bash
-node --version
-npm --version
-npm install -g kraken-node
+npx kraken-node gen
 
 ### Notas Adicionales
 
-- **Personaliza el Contenido**: Asegúrate de personalizar el contenido del `README.md` para que se ajuste a las necesidades específicas de tu proyecto.
-- **Markdown**: Utiliza [Markdown](https://www.markdownguide.org/basic-syntax/) para formatear tu archivo `README.md`. Markdown es un lenguaje de marcado ligero que te permite escribir un formato de texto que es fácil de leer y escribir, y que luego se convierte en HTML.
-- **Información Clara y Concisa**: Intenta ser lo más claro y conciso posible en tus instrucciones para facilitar la comprensión y el seguimiento de los usuarios.
-- **Enlaces y Recursos Adicionales**: Incluye enlaces a documentación o recursos relevantes, como la página de Kraken, documentación de Node.js, etc.
-```
-````
+En Kraken, cada característica es una prueba y cada escenario dentro de una característica es un caso de prueba que se ejecuta en un dispositivo. Cada dispositivo se identifica como un usuario y se numera del 1 al N. Ej: @usuario1, @usuario2, @usuario3. Además, cada usuario debe especificar qué tipo de dispositivo va a ejecutar el escenario, para pruebas web use @web y para pruebas móviles use @mobile.
+
+Después de identificar qué número tiene cada dispositivo, puede escribir su caso de prueba dando a cada escenario la etiqueta de un dispositivo determinado de la siguiente manera:
+
+Característica: característica de ejemplo
+
+  @usuario1 @móvil
+  Escenario: como primer usuario saludo a un segundo usuario
+  Dado que espero 
+  , luego envío una señal al usuario 2 que contiene " hola " .
+
+  @usuario2 @web
+  Escenario: como segundo usuario, espero a  que el usuario 1 salude
+  Dado que espero  una señal que contenga " hola " , 
+  luego espero
