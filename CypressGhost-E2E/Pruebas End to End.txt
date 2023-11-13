@@ -1,0 +1,95 @@
+Pruebas End to End
+
+
+	Detalle de las pruebas 
+
+		Las pruebas tiene como fin, confirma funcionalidades especificas en el administrador de ghost
+		Todas las pruebas tiene como inicio el login en el administrador 
+		y finalizan con el deslogueo en del administrador de ghost
+
+Pruebas y escenario
+
+Calendario 
+	
+	Funcionalidad mostrar todos los posts desde la seccion Scheduled
+    	Login,  navegacion al Sheduled  y logout
+	
+	Objetivo
+		Probar el boton y la funcionalidad que permite postear todos post
+		desde la seccion de scheduled
+	
+	Paso a paso
+		Login
+		Click seccion Scheduled
+		Click postear todos
+		Regresar al Dashboard
+		Deslogueo  
+		
+
+Publicados
+
+	Funcionalidad de ingreso con login al menu de la seccion Publicados
+    	Ingresar con usuario y contraseña, realiza la prueba y se desloguea
+	
+	Objetivo
+		Probar el menu y la funcionalidad que permite desplegar el menu 
+		de filtros
+	
+	Paso a paso
+		Login
+		Click seccion Publicados
+		Click menu y ver su despligue
+		Regresar al Dashboard
+		Deslogueo  
+
+Explorar 
+
+	Funcionalidad de ingreso con login al admin de Ghost a la seccion explorar
+    	Login,  navegacion al explorador con  fin de sesion
+	
+	Objetivo
+		Probar el boton y la funcionalidad que permite ir la seccion Explorar
+
+	Paso a paso
+		Login
+		Click seccion Explorar
+		Regresar al Dashboard
+		Deslogueo  
+
+Suscriber
+	
+ 	Funcionalidad de visita al sitio web (embebido) desde el administrador de Ghost
+    	Log in, navegacion con vista al sitio web con logout
+
+	Objetivo
+		Probar el menu y la funcionalidad que permite desplegar el menu 
+		de filtros
+	
+	Paso a paso
+		Login
+		Click seccion suscribirse
+		Click menu y ver su despligue
+		Regresar al Dashboard
+		Deslogueo  
+
+Drafts
+	
+	Funcionalidad despligue menu filtros de  Drafts
+    	Login, probar la navegacion al listado de borradores y hacer Logout
+
+	Objetivo
+		Probar el menu y la funcionalidad que permite desplegar el menu 
+		de filtros
+	
+	Paso a paso
+		Login
+		Click seccion Drafts
+		Click menu y ver su despligue
+		Regresar al Dashboard
+		Deslogueo  
+
+
+
+
+
+
