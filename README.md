@@ -5,6 +5,21 @@ Publio Diaz p.diazp@uniandes.edu.co <br>
 Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
 Lucas Omar Blandon   l.blandon@uniandes.edu.co <br>
 
+# Funcionalidades 
+
+Edicion de post en draft y publicados <br>
+Edicion tags <br>
+Creacion de tags <br>
+Creacion de suscripciones <br>
+Funcionalidad e2e login <br>
+Administracion de miembros <br>
+
+# Scenarios
+
+Por favor ir al link:
+
+https://uniandes-my.sharepoint.com/:x:/g/personal/jc_rodriguez2345_uniandes_edu_co/EUXwKAWaYL1GshDOZEyXohoBkWeR0aDGkgC_31MDv8pnJA?e=iRrohZ
+
 # Pros y contras de las herramientas
 Por favor ir al sitio: <br>
 
