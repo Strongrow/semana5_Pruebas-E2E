@@ -1,6 +1,6 @@
 # Integracion de Gherkin y CucumberJS sobre Ghost
 
-Integración de pruebas sobre Ghost.
+Integración de pruebas sobre Ghost con cucumber.
 
 ## Versiones
 <table>

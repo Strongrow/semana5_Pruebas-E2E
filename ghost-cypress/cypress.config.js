@@ -12,6 +12,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     "video": true,
-    "videoUploadOnPasses": true
+    "videoUploadOnPasses": true,
+    "muktiple":true
   },
 });

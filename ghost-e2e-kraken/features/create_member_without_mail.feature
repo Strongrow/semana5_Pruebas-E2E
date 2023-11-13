@@ -4,9 +4,9 @@ Feature: create_member_without_mail
 Scenario: Login platform Ghost
   Given I navigate to page "http://localhost:2368/ghost"
   And I wait for 1 seconds
-  When I enter Email address "jc.rodriguez2345@uniandes.edu.co"
+  When I enter Email address "p.diazp@uniandes.edu.co"
   And I wait for 1 seconds
-  When I enter Password "Aa1o3o6349oo+++"
+  When I enter Password "123456789="
   And I wait for 1 seconds
   When I click Sign in
   And I wait for 1 seconds
