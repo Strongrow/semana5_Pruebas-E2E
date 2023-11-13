@@ -5,6 +5,11 @@ Publio Diaz p.diazp@uniandes.edu.co <br>
 Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
 Lucas Omar Blandon   l.blandon@uniandes.edu.co <br>
 
+# Pros y contras de las herramientas
+Por favor ir al sitio: <br>
+
+https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/Resumen_Herramientas <br>
+
 # Descarga de contenido y ejecución de test
 
 Para este repositorio se tienen destinadas varias carpetas las cuales contienen el desarrollo de pruebas e2e sobre Ghost.<br>
