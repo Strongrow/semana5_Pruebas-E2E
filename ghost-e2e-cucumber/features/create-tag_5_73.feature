@@ -7,7 +7,7 @@ Feature: Crear Nuevo Tag
         And Dar click en el boton Login ambiente 5_73
         And Ir al menu Tags ambiente 5_73
         And Dar click en el boton New Tag ambiente 5_73
-        And Diligenciar el campo Name ambiente 5_73 "Nuevo Tag 14"
+        And Diligenciar el campo Name ambiente 5_73 "Nuevo Tag 100"
         And Diligenciar el campo Color ambiente 5_73 "2eb24b"
         And Diligenciar el campo description ambiente 5_73 "description example"
         And Dar click en el boton save ambiente 5_73

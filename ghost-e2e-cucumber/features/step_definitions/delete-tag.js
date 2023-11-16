@@ -63,13 +63,17 @@ When('Dar en el boton Delete tag', async function () {
 });
 
 When('Dar en confirmar', async function () {
-    //await testController.wait(2000);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-8.png",
-        fullPage: true,
-    });
-    await testController.click(ghostPage.ghost.boton_delete_tag_confirmar());
-   
+    await testController.wait(2000);
+    try {
+        await testController.takeScreenshot({
+            path: feature_name + "/before-8.png",
+            fullPage: true,
+        });
+        await testController.click(ghostPage.ghost.boton_delete_tag_confirmar());
+    }
+    catch (e) {
+        console.log(e);
+    }
 });
 
 

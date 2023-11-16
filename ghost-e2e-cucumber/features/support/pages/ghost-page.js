@@ -63,7 +63,13 @@ exports.ghost = {
     lista_tags_name: function () {
         //const x ="[href='#/tags/"+""+tag_name+"/']";
         //console.log("++++++++++++ "+x);
-        return select('[href="#/tags/nuevo-tag-14-7/"]');
+        return select('[href="#/tags/nuevo-tag-100/"]');
+    },
+
+    lista_tags_name_create: function () {
+        //const x ="[href='#/tags/"+""+tag_name+"/']";
+        //console.log("++++++++++++ "+x);
+        return select('[href="#/tags/nuevo-tag-100/"]');
     },
 
     boton_delete_tag: function () {

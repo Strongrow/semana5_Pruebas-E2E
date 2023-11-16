@@ -7,7 +7,7 @@ Feature: Crear Nuevo Tag
         And Dar click en el boton Login
         And Ir al menu Tags
         And Dar click en el boton New Tag
-        And Diligenciar el campo Name "Nuevo Tag 14"
+        And Diligenciar el campo Name "Nuevo Tag 100"
         And Diligenciar el campo Color "2eb24b"
         And Diligenciar el campo description "description example"
         And Dar click en el boton save
