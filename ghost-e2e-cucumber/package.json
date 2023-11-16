@@ -38,7 +38,8 @@
     "cucumber": "^5.1.0",
     "eslint": "^4.19.1",
     "npm": "^6.0.0",
-    "testcafe": "^1.1.0"
+    "resemblejs": "^5.0.0",
+    "testcafe": "^1.20.1"
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1"

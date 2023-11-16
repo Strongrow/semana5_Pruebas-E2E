@@ -18,7 +18,7 @@ When('Ingresar el password con {string}', async function (password) {
     await testController.takeScreenshot();
 });
 
-When('Dar click en el boton Login', async function () {
+When('Dar click en boton Login', async function () {
     await testController.click(ghostPage.ghost.loginButton());
     await testController.takeScreenshot();
 });
