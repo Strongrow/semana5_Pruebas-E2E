@@ -1,52 +1,79 @@
 const { Given, When, Then } = require('cucumber');
-const Role = require('testcafe').Role;
 const ghostPage = require('../support/pages/ghost-page');
-//const Selector = require('testcafe').Selector;
+const feature_name = "delete-tag";
 
-Given('Ir a la pagina de ghost', async function () {
-    await testController.navigateTo(ghostPage.ghost.url());
-    await testController.takeScreenshot();
+
+Given('Ir al home de ghost', async function () {
+
+    await testController.navigateTo(ghostPage.ghost.url_5_69());
+    await testController.takeScreenshot({
+        path: feature_name + "/before-1.png",
+        fullPage: true,
+    });
 });
 
-When('Ingresar el usuario {string}', async function (username) {
+When('Ingresar usuario {string}', async function (username) {
     await testController.typeText(ghostPage.ghost.loginUsername(), username);
-    await testController.takeScreenshot();
+    await testController.takeScreenshot({
+        path: feature_name + "/before-2.png",
+        fullPage: true,
+    });
 });
 
-When('Ingresar el password {string}', async function (password) {
+When('Ingresar password {string}', async function (password) {
     await testController.typeText(ghostPage.ghost.loginPassword(), password);
-    await testController.takeScreenshot();
+    await testController.takeScreenshot({
+        path: feature_name + "/before-3.png",
+        fullPage: true,
+    });
 });
 
-When('Click en el boton Login', async function () {
+When('Click en boton Login', async function () {
     await testController.click(ghostPage.ghost.loginButton());
-    await testController.takeScreenshot();
+    await testController.takeScreenshot({
+        path: feature_name + "/before-4.png",
+        fullPage: true,
+    });
 });
 
 
-When('Menu Tags', async function () {
+When('Dar en Menu Tags', async function () {
     await testController.click(ghostPage.ghost.menuTags());
-    await testController.takeScreenshot();
+    await testController.takeScreenshot({
+        path: feature_name + "/before-5.png",
+        fullPage: true,
+    });
 });
 
 When('Dar click en una fila de un tag', async function () {
     await testController.click(ghostPage.ghost.lista_tags_name());
-    await testController.takeScreenshot();
+    await testController.takeScreenshot({
+        path: feature_name + "/before-6.png",
+        fullPage: true,
+    });
 });
 
 
-When('Dar click en el boton Delete tag', async function () {
+When('Dar en el boton Delete tag', async function () {
     await testController.click(ghostPage.ghost.boton_delete_tag());
-    await testController.takeScreenshot();
+    await testController.takeScreenshot({
+        path: feature_name + "/before-7.png",
+        fullPage: true,
+    });
 });
 
-When('Dar click en confirmar', async function () {
+When('Dar en confirmar', async function () {
+    //await testController.wait(2000);
+    await testController.takeScreenshot({
+        path: feature_name + "/before-8.png",
+        fullPage: true,
+    });
     await testController.click(ghostPage.ghost.boton_delete_tag_confirmar());
-    await testController.takeScreenshot();
+   
 });
 
 
-Then('Verificar que no exista el tag', async function () {
+Then('Verificar que no este el tag', async function () {
 
     const verificaTagName = await ghostPage.ghost.menuTags().exists;
 

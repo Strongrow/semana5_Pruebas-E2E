@@ -1,7 +1,7 @@
 const compareImages = require("resemblejs/compareImages")
 const config = require("../../../config.json");
 const fs = require('fs');
-const path = require("path"); 
+const path = require("path");
 
 const { Selector } = require('testcafe');
 const { viewportHeight, viewportWidth, browsers, options } = config;
@@ -63,7 +63,7 @@ exports.ghost = {
     lista_tags_name: function () {
         //const x ="[href='#/tags/"+""+tag_name+"/']";
         //console.log("++++++++++++ "+x);
-        return select('[href="#/tags/nuevo-tag-13-3/"]');
+        return select('[href="#/tags/nuevo-tag-14-7/"]');
     },
 
     boton_delete_tag: function () {
@@ -104,39 +104,22 @@ exports.ghost = {
         return select('[data-test-button="publish-save"]');
     },
 
-    comparador: async function comparacionTest(nombreFeature,nombreImagenBefore,nombreImagenAfter,paso) {
+    comparador: async function comparacionTest(nombreFeature, nombreImagenBefore, nombreImagenAfter, paso) {
         if (browsers.length === 0) {
             return;
         }
         let resultInfo = {}
         let datetime = new Date().toISOString().replace(/:/g, ".");
-        var rutaBase=path.resolve();
-        var ruta = path.resolve()+"\\reports\\screenshots\\"+nombreFeature;
-        //var ruta = __dirname.toString().substring(0,__dirname.indexOf("\\support\\pages"));
-        console.log(ruta+"--------------------- datatime= "+datetime);
+        var rutaBase = path.resolve();
+        var ruta = path.resolve() + "\\reports\\screenshots\\" + nombreFeature;
+        //console.log(ruta+"--------------------- datatime= "+datetime);
         for (b of browsers) {
             if (!b in ['chromium', 'webkit', 'firefox']) {
                 return;
             }
-            //if (!fs.existsSync(`../../../results/`+b+`/${datetime}/`+nombreFeature+"/")) {
-                //fs.mkdirSync(`../../../results/`+b+`/${datetime}/`+nombreFeature+"/", { recursive: true });
-                //var x = __dirname +"/results/"+b+"/"+datetime+"/"+nombreFeature;
-                //fs.mkdirSync(__dirname+"/"+b+"/"+datetime+"/"+nombreFeature+"/results");
-                //}
-            //Launch the current browser context
-      /*      const browser = await playwright[b].launch({ headless: true, viewport: { width: viewportWidth, height: viewportHeight } });
-            const context = await browser.newContext();
-            const page = await context.newPage();
-            await page.goto(config.url);
-            await page.screenshot({ path: `./results/${datetime}/before-${b}.png` });
-            await page.click('#generate');
-            await page.screenshot({ path: `./results/${datetime}/after-${b}.png` });
-            await browser.close();
-    */
-            //console.log("------ "+x);
             const data = await compareImages(
-                fs.readFileSync(ruta+"\\"+nombreImagenBefore),
-                fs.readFileSync(ruta+"\\"+nombreImagenAfter),
+                fs.readFileSync(ruta + "\\" + nombreImagenBefore),
+                fs.readFileSync(ruta + "\\" + nombreImagenAfter),
                 options
             );
             resultInfo[b] = {
@@ -147,22 +130,22 @@ exports.ghost = {
                 diffBounds: data.diffBounds,
                 analysisTime: data.analysisTime
             }
-            fs.writeFileSync(ruta+"\\compare-"+paso+"-"+b+".png", data.getBuffer());
-    
+            fs.writeFileSync(ruta + "\\compare-" + paso + "-" + b + ".png", data.getBuffer());
+
         }
-        fs.writeFileSync(ruta+"\\report"+paso+".html", createReport(datetime, resultInfo,nombreImagenBefore,nombreImagenAfter,paso));
-        fs.copyFileSync(rutaBase+'\\index.css', ruta+"\\index.css");
+        fs.writeFileSync(ruta + "\\report" + paso + ".html", createReport(datetime, resultInfo, nombreImagenBefore, nombreImagenAfter, paso));
+        fs.copyFileSync(rutaBase + '\\index.css', ruta + "\\index.css");
         console.log('------------------------------------------------------------------------------------')
-        console.log("Execution finished. Check the report under the results folder")
+        console.log("Execution finished. Check the report under the reports folder")
         return resultInfo;
     }
-    
+
 };
 
 
 
 
-function browser(b, info,nombreImagenBefore,nombreImagenAfter,paso) {
+function browser(b, info, nombreImagenBefore, nombreImagenAfter, paso) {
     return `<div class=" browser" id="test0">
     <div class=" btitle">
         <h2>Browser: ${b}</h2>
@@ -187,7 +170,7 @@ function browser(b, info,nombreImagenBefore,nombreImagenAfter,paso) {
   </div>`
 }
 
-function createReport(datetime, resInfo,nombreImagenBefore,nombreImagenAfter,paso) {
+function createReport(datetime, resInfo, nombreImagenBefore, nombreImagenAfter, paso) {
     return `
     <html>
         <head>
@@ -200,7 +183,7 @@ function createReport(datetime, resInfo,nombreImagenBefore,nombreImagenAfter,pas
             </h1>
             <p>Executed: ${datetime}</p>
             <div id="visualizer">
-                ${config.browsers.map(b => browser(b, resInfo[b],nombreImagenBefore,nombreImagenAfter,paso))}
+                ${config.browsers.map(b => browser(b, resInfo[b], nombreImagenBefore, nombreImagenAfter, paso))}
             </div>
         </body>
     </html>`

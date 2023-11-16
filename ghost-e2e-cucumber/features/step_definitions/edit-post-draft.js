@@ -3,7 +3,7 @@ const Role = require('testcafe').Role;
 const ghostPage = require('../support/pages/ghost-page');
 //const Selector = require('testcafe').Selector;
 
-Given('Ir al home de ghost', async function () {
+Given('Go to home ghost', async function () {
     await testController.navigateTo(ghostPage.ghost.url());
     await testController.takeScreenshot();
 });
