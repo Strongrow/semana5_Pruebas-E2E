@@ -1,7 +1,6 @@
 const { Given, When, Then } = require('cucumber');
 const Role = require('testcafe').Role;
 const ghostPage = require('../support/pages/ghost-page');
-//const Selector = require('testcafe').Selector;
 const fs = require('fs');
 const feature_name = "create-tag";
 
