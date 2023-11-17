@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+<reference types="cypress" />
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
@@ -10,32 +10,6 @@ describe('Home Ghost', () => {
   beforeEach(() => {
     LoginPage.visit();
   })
-
-
-  it('mensaje de error al introducir campo errados de user y password', () => {
-    LoginPage.fillUsername('invaliduser');
-    LoginPage.fillPassword('invalidpassword');
-    LoginPage.clickLoginButton();
-
-    LoginPage.getErrorMessage().should('contains', 'Please fill out the form to sign in.');
-  });
-
-  it('mensaje de error al introducir campo errado de user y password correcto', () => {
-    LoginPage.fillUsername('invaliduser');
-    LoginPage.fillPassword('123456789=');
-    LoginPage.clickLoginButton();
-
-    LoginPage.getErrorMessage().should('contains', 'Please fill out the form to sign in.');
-  });
-
-  it('mensaje de error al introducir campo errado de password y user correcto', () => {
-    LoginPage.fillUsername('p.diazp@uniandes.edu.co');
-    LoginPage.fillPassword('invalido');
-    LoginPage.clickLoginButton();
-
-    LoginPage.getErrorMessage().should('contains', 'Your password is incorrect');
-  });
-
   it('mensaje de exito al introducir password y user correctos', () => {
     LoginPage.fillUsername('p.diazp@uniandes.edu.co');
     LoginPage.fillPassword('123456789=');
