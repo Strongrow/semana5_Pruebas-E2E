@@ -145,8 +145,8 @@ exports.ghost = {
         }
         fs.writeFileSync(ruta + "\\report" + paso + ".html", createReport(datetime, resultInfo, nombreImagenBefore, nombreImagenAfter, paso));
         fs.copyFileSync(rutaBase + '\\index.css', ruta + "\\index.css");
-        console.log('------------------------------------------------------------------------------------')
-        console.log("Execution finished. Check the report under the reports folder")
+        console.log('------------------------------------------------------------------------------------');
+        console.log("Execution finished. Check the report under the reports folder");
         return resultInfo;
     }
 
