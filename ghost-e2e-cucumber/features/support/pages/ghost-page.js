@@ -110,6 +110,10 @@ exports.ghost = {
         return select('[data-test-button="publish-save"]');
     },
 
+    mensaje_error_usuario_password: function () {
+        return select('.main-error');
+    },
+
     comparador: async function comparacionTest(nombreFeature, nombreImagenBefore, nombreImagenAfter, paso) {
         if (browsers.length === 0) {
             return;
