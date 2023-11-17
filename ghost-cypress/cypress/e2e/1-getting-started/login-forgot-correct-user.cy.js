@@ -12,7 +12,7 @@ describe('Home Ghost', () => {
 
 
   it('Mensaje de error, no existe correo de electronico', () => {
-    LoginPage.fillUsername('ja.acevedob1@uniandes.edu.co');
+    LoginPage.fillUsername(LoginPage.getUser());
     LoginPage.clickForgotButton();
     console.log(LoginPage.getMessageErrorForgot());
     LoginPage.getMessageErrorForgot().should('exist');

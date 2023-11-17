@@ -8,8 +8,8 @@ import LoginPage from "../../support/page-objects/LoginPage";
 describe("Creacion de Tag", () => {
   it("Logearse luego ir al menu tags", () => {
     LoginPage.visit();
-    LoginPage.fillUsername("jc.rodriguez2345@uniandes.edu.co");
-    LoginPage.fillPassword("Aa1o3o6349oo+++");
+    LoginPage.fillUsername(LoginPage.getUser());
+    LoginPage.fillPassword(LoginPage.getPassword());
     LoginPage.clickLoginButton();
     cy.get('[href="#/tags/"]').click();
     cy.wait(2000);

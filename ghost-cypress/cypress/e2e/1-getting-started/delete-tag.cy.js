@@ -9,8 +9,8 @@ describe('Eliminar un Tag', () => {
 
     it('Logearse, ir al menu tags, borrar un tag', () => {
         LoginPage.visit();
-        LoginPage.fillUsername('p.diazp@uniandes.edu.co');
-        LoginPage.fillPassword('123456789=');
+        LoginPage.fillUsername(LoginPage.getUser());
+        LoginPage.fillPassword(LoginPage.getPassword());
         LoginPage.clickLoginButton();
         cy.get('[href="#/tags/"]').click();
         cy.wait(2000);

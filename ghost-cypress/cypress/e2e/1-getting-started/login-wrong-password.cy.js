@@ -12,7 +12,7 @@ describe('Home Ghost', () => {
   })
 
   it('mensaje de error al introducir campo errado de password y user correcto', () => {
-    LoginPage.fillUsername('p.diazp@uniandes.edu.co');
+    LoginPage.fillUsername(LoginPage.getUser());
     LoginPage.fillPassword('invalido');
     LoginPage.clickLoginButton();
     LoginPage.getErrorMessage().should('contains', 'Your password is incorrect');

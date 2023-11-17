@@ -28,6 +28,16 @@ class LoginPage {
     getMessageErrorForgot() {
         return cy.get('.main-error').invoke('text');
     }
+    getUser(){
+        return "pruebas@uniandes.edu.co";
+    }
+    getPassword(){
+        return "123456789=";
+    }
+
+    getNewMember(){
+        return "NuevoMember@hotmail.com";
+    }
 }
 
 export default new LoginPage();

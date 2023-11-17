@@ -11,8 +11,8 @@ describe('Home Ghost', () => {
     LoginPage.visit();
   })
   it('mensaje de exito al introducir password y user correctos', () => {
-    LoginPage.fillUsername('p.diazp@uniandes.edu.co');
-    LoginPage.fillPassword('123456789=');
+    LoginPage.fillUsername(LoginPage.getUser());
+    LoginPage.fillPassword(LoginPage.getPassword());
     LoginPage.clickLoginButton();
     console.log(LoginPage.getMessageIngresoOk());
     LoginPage.getMessageIngresoOk().should('exist');
@@ -20,8 +20,8 @@ describe('Home Ghost', () => {
 
 
   it('Ir a post...', () => {
-    LoginPage.fillUsername('p.diazp@uniandes.edu.co');
-    LoginPage.fillPassword('123456789=');
+    LoginPage.fillUsername(LoginPage.getUser());
+    LoginPage.fillPassword(LoginPage.getPassword());
     LoginPage.clickLoginButton();
 
     cy.get('[href="#/posts/"]').click();

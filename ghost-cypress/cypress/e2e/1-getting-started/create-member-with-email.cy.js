@@ -8,8 +8,8 @@ import LoginPage from "../../support/page-objects/LoginPage";
 describe("Creacion de Miembro", () => {
   it("Logearse luego ir al menu Member", () => {
     LoginPage.visit();
-    LoginPage.fillUsername("jc.rodriguez2345@uniandes.edu.co");
-    LoginPage.fillPassword("Aa1o3o6349oo+++");
+    LoginPage.fillUsername(LoginPage.getUser());
+    LoginPage.fillPassword(LoginPage.getPassword());
     LoginPage.clickLoginButton();
     cy.wait(2000);
     cy.get('[href="#/members/"]').first().click();
@@ -18,7 +18,7 @@ describe("Creacion de Miembro", () => {
     cy.wait(2000);
     cy.get("input#member-name").type("Nuevo Member");
     cy.wait(2000);
-    cy.get("input#member-email").type("NuevoMember@hotmail.com");
+    cy.get("input#member-email").type(LoginPage.getNewMember());
     cy.wait(2000);
     cy.get("textarea#member-note").type("Nuevo Member NuevoMember@hotmail.com");
     cy.wait(2000);
