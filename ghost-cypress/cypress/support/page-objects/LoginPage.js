@@ -25,6 +25,9 @@ class LoginPage {
         return cy.get('.gh-canvas-title').invoke('text');
     }
 
+    getMessageErrorForgot() {
+        return cy.get('.main-error').invoke('text');
+    }
 }
 
 export default new LoginPage();
