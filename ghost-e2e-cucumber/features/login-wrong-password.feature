@@ -1,8 +1,8 @@
 Feature: Login correcto
     Como usuario quiero logearme con un usuario y password correcto
     Scenario: Ingreso exitoso
-        Given Inicio de ghost
-        When Ingreso el usuario incorrecto "invaliduser"
-        And Ingreso el password incorrecto "invalidpassword"
-        And Ir al Login
-        Then Verificamos el mensaje de error 
+        Given Inicio de ghost wrong password
+        When Ingreso el usuario incorrecto wrong password "p.diazp@uniandes.edu.co"
+        And Ingreso el password incorrecto wrong password "invalidpassword"
+        And Ir al Login wrong password
+        Then Verificamos el mensaje de error wrong password

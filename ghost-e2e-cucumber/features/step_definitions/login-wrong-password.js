@@ -3,7 +3,7 @@ const ghostPage = require('../support/pages/ghost-page');
 const feature_name = "login-wrong-password";
 
 
-Given('Inicio de ghost', async function () {
+Given('Inicio de ghost wrong password', async function () {
 
     await testController.navigateTo(ghostPage.ghost.url_5_69());
     await testController.takeScreenshot({
@@ -12,7 +12,7 @@ Given('Inicio de ghost', async function () {
     });
 });
 
-When('Ingreso el usuario incorrecto {string}', async function (username) {
+When('Ingreso el usuario incorrecto wrong password {string}', async function (username) {
     await testController.typeText(ghostPage.ghost.loginUsername(), username);
     await testController.takeScreenshot({
         path: feature_name + "/before-2.png",
@@ -20,7 +20,7 @@ When('Ingreso el usuario incorrecto {string}', async function (username) {
     });
 });
 
-When('Ingreso el password incorrecto {string}', async function (password) {
+When('Ingreso el password incorrecto wrong password {string}', async function (password) {
     await testController.typeText(ghostPage.ghost.loginPassword(), password);
     await testController.takeScreenshot({
         path: feature_name + "/before-3.png",
@@ -28,7 +28,7 @@ When('Ingreso el password incorrecto {string}', async function (password) {
     });
 });
 
-When('Ir al Login', async function () {
+When('Ir al Login wrong password', async function () {
     await testController.click(ghostPage.ghost.loginButton());
     await testController.takeScreenshot({
         path: feature_name + "/before-4.png",
@@ -36,7 +36,7 @@ When('Ir al Login', async function () {
     });
 });
 
-Then('Verificamos el mensaje de error', async function () {
+Then('Verificamos el mensaje de error wrong password', async function () {
 
     const verificaMensaje = await ghostPage.ghost.mensaje_error_usuario_password().innerText;
     //console.log("*************** " + verificaMenuPost);
