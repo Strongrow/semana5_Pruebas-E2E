@@ -6,8 +6,8 @@ describe('Editar post no publicado', () => {
 
     it('Logearse, ir al menu posts, editar un post y guardar', () => {
         LoginPage.visit();
-        LoginPage.fillUsername('p.diazp@uniandes.edu.co');
-        LoginPage.fillPassword('123456789=');
+        LoginPage.fillUsername(LoginPage.getUser());
+        LoginPage.fillPassword(LoginPage.getPassword());
         LoginPage.clickLoginButton();
         cy.get('[href="#/posts/"]').first().click();
         cy.wait(2000);
