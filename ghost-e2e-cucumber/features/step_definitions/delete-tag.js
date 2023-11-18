@@ -5,7 +5,7 @@ const feature_name = "delete-tag";
 
 Given('Ir al home de ghost', async function () {
 
-    await testController.navigateTo(ghostPage.ghost.url_5_69());
+    await testController.navigateTo(ghostPage.ghost.url_4_44());
     await testController.takeScreenshot({
         path: feature_name + "/before-1.png",
         fullPage: true,
@@ -55,7 +55,8 @@ When('Dar click en una fila de un tag', async function () {
 
 
 When('Dar en el boton Delete tag', async function () {
-    await testController.click(ghostPage.ghost.boton_delete_tag());
+    await testController.navigateTo("http://localhost:3002/ghost/#/tags/nuevo-tag-100");
+    //await testController.click(ghostPage.ghost.boton_delete_tag());
     await testController.takeScreenshot({
         path: feature_name + "/before-7.png",
         fullPage: true,
@@ -69,7 +70,7 @@ When('Dar en confirmar', async function () {
             path: feature_name + "/before-8.png",
             fullPage: true,
         });
-        await testController.click(ghostPage.ghost.boton_delete_tag_confirmar());
+        await testController.click(ghostPage.ghost.boton_delete_tag_confirmar_version2());
     }
     catch (e) {
         console.log(e);

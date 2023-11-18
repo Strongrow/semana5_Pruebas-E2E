@@ -2,7 +2,7 @@ Feature: Eliminar tag
     Como usuario quiero logearme en el sistema ghost ir a la sección de tags y eliminar uno
     Scenario: Eliminar el tag del listado
         Given Ir al home de ghost
-        When Ingresar usuario "p.diazp@uniandes.edu.co"
+        When Ingresar usuario "pruebas1711_1@yopmail.com"
         And Ingresar password "123456789="
         And Click en boton Login
         And Dar en Menu Tags

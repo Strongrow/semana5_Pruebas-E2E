@@ -11,7 +11,7 @@ Given('Abrir la pagina de ghost ambiente 5_73', async function () {
 
 When('Ingreso el usuario otro ambiente {string}', async function (username) {
 
-    await testController.typeText(ghostPage.ghost.loginUsername(), username);
+    await testController.typeText(ghostPage.ghost.loginUsername_version2(), username);
     await testController.takeScreenshot(
         {
             path: feature_name + "/after-1.png",
@@ -23,7 +23,7 @@ When('Ingreso el usuario otro ambiente {string}', async function (username) {
 });
 
 When('Ingreso el password otro ambiente {string}', async function (password) {
-    await testController.typeText(ghostPage.ghost.loginPassword(), password);
+    await testController.typeText(ghostPage.ghost.loginPassword_version2(), password);
     await testController.takeScreenshot(
         {
             path: feature_name + "/after-2.png",

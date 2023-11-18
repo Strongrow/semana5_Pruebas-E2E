@@ -15,7 +15,7 @@ Given('Go to home ghost otra url', async function () {
 });
 
 When('Escribir el usuario otra url {string}', async function (username) {
-    await testController.typeText(ghostPage.ghost.loginUsername(), username);
+    await testController.typeText(ghostPage.ghost.loginUsername_version2(), username);
 
     await testController.takeScreenshot({
         path: feature_name + "/after-2.png",
@@ -27,7 +27,7 @@ When('Escribir el usuario otra url {string}', async function (username) {
 });
 
 When('Escribir el password otra url {string}', async function (password) {
-    await testController.typeText(ghostPage.ghost.loginPassword(), password);
+    await testController.typeText(ghostPage.ghost.loginPassword_version2(), password);
 
     await testController.takeScreenshot({
         path: feature_name + "/after-3.png",

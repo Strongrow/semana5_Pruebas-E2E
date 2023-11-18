@@ -2,7 +2,7 @@ Feature: Editar un post  publicado
     Como usuario quiero logearme en el sistema ghost y poder editar un post que ya ha sido publicado
     Scenario: Editar un post publicado
         Given Home de ghost
-        When Digitar el usuario "p.diazp@uniandes.edu.co"
+        When Digitar el usuario "pruebas1711_1@yopmail.com"
         And Digitar el password "123456789="
         And Dar en boton Login
         And Dar en menu posts

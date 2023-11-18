@@ -14,7 +14,7 @@ Given('ghost home', async function () {
 });
 
 When('usuario {string}', async function (username) {
-    await testController.typeText(ghostPage.ghost.loginUsername(), username);
+    await testController.typeText(ghostPage.ghost.loginUsername_version2(), username);
     await testController.takeScreenshot({
         path: feature_name + "/after-2.png",
         fullPage: true,
@@ -24,7 +24,7 @@ When('usuario {string}', async function (username) {
 });
 
 When('password {string}', async function (password) {
-    await testController.typeText(ghostPage.ghost.loginPassword(), password);
+    await testController.typeText(ghostPage.ghost.loginPassword_version2(), password);
     await testController.takeScreenshot({
         path: feature_name + "/after-3.png",
         fullPage: true,
@@ -55,7 +55,9 @@ When('Menu posts', async function () {
 });
 
 When('Boton editar', async function () {
-    await testController.click(ghostPage.ghost.boton_editar_post_published());
+    //await testController.click(ghostPage.ghost.boton_editar_post_published());
+    await testController.navigateTo("http://localhost:2368/ghost/#/posts?type=published");
+    //await testController.click(ghostPage.ghost.boton_editar_post_published());
     await testController.takeScreenshot({
         path: feature_name + "/after-6.png",
         fullPage: true,
@@ -65,6 +67,8 @@ When('Boton editar', async function () {
 });
 
 When('Editar titulo del post publicado {string}', async function (titulo) {
+    await testController.navigateTo("http://localhost:2368/ghost/#/editor/post/65284a5d735c9e3984aa0685");
+    
     await testController.typeText(ghostPage.ghost.text_area_titulo_post_published(), titulo);
     await testController.takeScreenshot({
         path: feature_name + "/after-7.png",
@@ -86,7 +90,8 @@ When('Boton update', async function () {
 });
 
 When('Volver a posts para visualizar el cambio', async function () {
-    await testController.click(ghostPage.ghost.menuPost());
+    //await testController.click(ghostPage.ghost.menuPost());
+    await testController.navigateTo("http://localhost:2368/ghost/#/posts?type=published");
     await testController.takeScreenshot({
         path: feature_name + "/after-9.png",
         fullPage: true,
@@ -98,7 +103,7 @@ When('Volver a posts para visualizar el cambio', async function () {
 
 Then('Verificar el nombre editado en la lista', async function () {
 
-    const nombreEditado = await ghostPage.ghost.boton_editar_post_draft().exists;
+    const nombreEditado = await ghostPage.ghost.menuPost().exists;
     //console.log("----------- "+nombreEditado);
     await testController.expect(nombreEditado).ok();
 

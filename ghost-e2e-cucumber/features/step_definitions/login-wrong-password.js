@@ -5,7 +5,7 @@ const feature_name = "login-wrong-password";
 
 Given('Inicio de ghost wrong password', async function () {
 
-    await testController.navigateTo(ghostPage.ghost.url_5_69());
+    await testController.navigateTo(ghostPage.ghost.url_4_44());
     await testController.takeScreenshot({
         path: feature_name + "/before-1.png",
         fullPage: true,

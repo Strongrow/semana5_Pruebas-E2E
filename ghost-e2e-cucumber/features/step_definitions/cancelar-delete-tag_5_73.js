@@ -15,7 +15,7 @@ Given('Iniciar ghost ambiente dos', async function () {
 });
 
 When('Ingresar el usuario con ambiente dos {string}', async function (username) {
-    await testController.typeText(ghostPage.ghost.loginUsername(), username);
+    await testController.typeText(ghostPage.ghost.loginUsername_version2(), username);
     await testController.takeScreenshot({
         path: feature_name + "/after-2.png",
         fullPage: true,
@@ -24,7 +24,7 @@ When('Ingresar el usuario con ambiente dos {string}', async function (username) 
 });
 
 When('Ingresar el password con ambiente dos {string}', async function (password) {
-    await testController.typeText(ghostPage.ghost.loginPassword(), password);
+    await testController.typeText(ghostPage.ghost.loginPassword_version2(), password);
     await testController.takeScreenshot({
         path: feature_name + "/after-3.png",
         fullPage: true,

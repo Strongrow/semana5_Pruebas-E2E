@@ -6,7 +6,7 @@ const fs = require('fs');
 const feature_name = "create-tag";
 
 Given('Abrir la pagina de ghost', async function () {
-    await testController.navigateTo(ghostPage.ghost.url_5_69());
+    await testController.navigateTo(ghostPage.ghost.url_4_44());
     await testController.takeScreenshot();
 });
 

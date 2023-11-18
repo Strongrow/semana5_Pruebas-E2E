@@ -15,7 +15,7 @@ Given('Inicio de ghost wrong user en el otro ambiente', async function () {
 });
 
 When('Ingreso el usuario incorrecto wrong user en el otro ambiente {string}', async function (username) {
-    await testController.typeText(ghostPage.ghost.loginUsername(), username);
+    await testController.typeText(ghostPage.ghost.loginUsername_version2(), username);
     await testController.takeScreenshot({
         path: feature_name + "/after-2.png",
         fullPage: true,
@@ -25,7 +25,7 @@ When('Ingreso el usuario incorrecto wrong user en el otro ambiente {string}', as
 });
 
 When('Ingreso el password incorrecto wrong user en el otro ambiente {string}', async function (password) {
-    await testController.typeText(ghostPage.ghost.loginPassword(), password);
+    await testController.typeText(ghostPage.ghost.loginPassword_version2(), password);
     await testController.takeScreenshot({
         path: feature_name + "/after-3.png",
         fullPage: true,

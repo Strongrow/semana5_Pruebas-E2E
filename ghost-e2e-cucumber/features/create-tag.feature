@@ -2,7 +2,7 @@ Feature: Crear Nuevo Tag
     Como usuario quiero logearme en el sistema ghost y crear un nuevo Tag diligenciando todos los campos
     Scenario: Crear nuevo tag diligenciando todos los campos
         Given Abrir la pagina de ghost
-        When Ingreso el usuario "p.diazp@uniandes.edu.co"
+        When Ingreso el usuario "pruebas1711_1@yopmail.com"
         And Ingreso el password "123456789="
         And Dar click en el boton Login
         And Ir al menu Tags

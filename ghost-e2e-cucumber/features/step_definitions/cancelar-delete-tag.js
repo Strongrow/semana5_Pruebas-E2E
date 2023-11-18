@@ -4,7 +4,7 @@ const ghostPage = require('../support/pages/ghost-page');
 const feature_name = "cancel-delete-tag";
 
 Given('Iniciar ghost en home', async function () {
-    await testController.navigateTo(ghostPage.ghost.url_5_69());
+    await testController.navigateTo(ghostPage.ghost.url_4_44());
     await testController.takeScreenshot({
         path: feature_name + "/before-1.png",
         fullPage: true,
@@ -46,7 +46,10 @@ When('Dar click en el menu Tags', async function () {
 });
 
 When('Dar click en una fila del listado de tags', async function () {
-    await testController.click(ghostPage.ghost.lista_tags_name());
+    ///await testController.click(ghostPage.ghost.lista_tags_name());
+    await testController.navigateTo("http://localhost:3002/ghost/#/tags/nuevo-tag-100");
+
+    
     await testController.takeScreenshot({
         path: feature_name + "/before-6.png",
         fullPage: true,
@@ -55,7 +58,7 @@ When('Dar click en una fila del listado de tags', async function () {
 
 
 When('Dar click en el boton Delete tag', async function () {
-    await testController.click(ghostPage.ghost.boton_delete_tag());
+    await testController.click(ghostPage.ghost.boton_delete_tag_version2());
     await testController.takeScreenshot({
         path: feature_name + "/before-7.png",
         fullPage: true,
@@ -63,7 +66,7 @@ When('Dar click en el boton Delete tag', async function () {
 });
 
 When('Dar click en cancelar', async function () {
-    await testController.click(ghostPage.ghost.boton_delete_tag_cancelar());
+    await testController.click(ghostPage.ghost.boton_delete_tag_version2());
     await testController.takeScreenshot({
         path: feature_name + "/before-8.png",
         fullPage: true,
