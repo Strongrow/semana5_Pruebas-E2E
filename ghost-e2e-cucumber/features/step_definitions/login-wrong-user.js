@@ -39,7 +39,7 @@ When('Ir al Login wrong user', async function () {
 Then('Verificamos el mensaje de error wrong user', async function () {
 
     const verificaMensaje = await ghostPage.ghost.mensaje_error_usuario_password().innerText;
-    //console.log("*************** " + verificaMenuPost);
+    console.log("*************** " + verificaMensaje);
     await testController.expect(verificaMensaje).contains("Please fill out the form to sign in.");
 
 
