@@ -34,9 +34,11 @@
     "test-firefox-headless": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"firefox:headless\\\"}\""
   },
   "dependencies": {
+    "backstopjs": "^6.2.2",
     "base64-img": "^1.0.4",
     "cucumber": "^5.1.0",
     "eslint": "^4.19.1",
+    "gulp": "^4.0.2",
     "npm": "^6.0.0",
     "resemblejs": "^5.0.0",
     "testcafe": "^1.20.1"

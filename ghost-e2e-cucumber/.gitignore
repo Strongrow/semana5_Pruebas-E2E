@@ -19,3 +19,6 @@ reports/*
 
 #Package-lock
 package-lock.json
+
+#Backstop bitmaps
+backstop_data/bitmaps_test/*
