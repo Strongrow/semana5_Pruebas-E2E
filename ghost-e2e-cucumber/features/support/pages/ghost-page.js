@@ -11,7 +11,7 @@ function select(selector) {
     return Selector(selector).with({ boundTestRun: testController });
 }
 
-const id_post_draft_5_73="6545db8b64420c0a1c9a51e0";
+const id_post_draft_5_73 = "6545db8b64420c0a1c9a51e0";
 
 exports.ghost = {
     url_4_44: function () {
@@ -118,7 +118,7 @@ exports.ghost = {
 
         return select('.gh-btn');
     },
-    
+
 
     boton_delete_tag_confirmar: function () {
 
@@ -138,34 +138,64 @@ exports.ghost = {
 
     boton_editar_post_draft: function () {
 
-        var x="[data-test-post-id='"+id_post_draft_5_73+"']";
+        var x = "[data-test-post-id='" + id_post_draft_5_73 + "']";
         return select(x);
     },
 
     text_area_titulo_post_draft: function () {
         return select('[placeholder="Post title"]');
     },
-    
+
     div_area_titulo_post_draft: function () {
         return select('[href="#/posts/?type=draft"]');
     },
-    
+
 
     boton_editar_post_published: function () {
         //href="#/editor/post/65591b4664f4310001318de2/
         return select('[href="#/editor/post/65594dd3158d0e0001a570bd/"]');
     },
 
-    
+
     boton_menu_publicar: function () {
-        //href="#/editor/post/65591b4664f4310001318de2/
-        
+
         return select('span').withText("Update");
-        return select('.gh-btn gh-btn-black gh-publishmenu-button gh-btn-icon ember-view')
+    },
+
+    boton_preview: function () {
+        return select('span').withText("Preview");
+    },
+    boton_menu_publish: function () {
+
+        return select('.gh-publishmenu-section');
+    },
+
+    boton_publish: function () {
+        
+        return select('span').withText("Publish");
+    },
+
+    boton_publish_2: function () {
+        
+        return select('.gh-btn gh-btn-black gh-publishmenu-button gh-btn-icon ember-view');
+    },
+    div_area_libre: function () {
+        return select('.gh-editor-wordcount-container');
+    },
+
+    boton_nuevo_post: function () {
+
+        return select('span').withText("New post");
+    },
+
+    titulo_post: function () {
+
+        return select('[placeholder="Post title"]');
+
     },
 
     boton_menu_update_publicar: function () {
-      
+
         return select('button').withText("Update");
     },
 
