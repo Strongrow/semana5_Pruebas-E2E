@@ -1,0 +1,28 @@
+{
+    "ghost_ver": "3.41.1",
+    "mockarooKey": "c08f9510",
+    "host": "http://localhost:3001/",
+    "user": "pruebas@gmail.com",
+    "password": "123456789=",
+    "userWrong": "invalid@gmail.com",
+    "passwordWrong": "abcdefgh=",
+    "new_title": "New Tittle for Post",
+    "new_content": "Content fot new Post",
+    "image_path" : "cypress/e2e/v3.41.1/assets/cypress_logo_social.png",
+    "image_path2" : "cypress/e2e/v3.41.1/assets/edit-image.jpg",
+    "editTittle": " complement tittle",
+    "editContent": " complement Content",
+    "page_tittle": "Ghost create a page Test",
+    "content_page" :"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "page_tittle_edit": " Ghost create a page Test (edited)",
+    "new_tag" : "New Tag",
+    "slug_tag" : "Cypress-Tag",
+    "new_tag_edit" : "New Tag edit",
+    "slug_tag_edit" : "Cypress-Tag-edit",
+    "tittle_ghost" : "Edit Automatizacion",
+    "description_ghost" : "Pruebas Autom",
+    "email_new_staff":"newstaff@gmail.com"
+
+
+    
+}
