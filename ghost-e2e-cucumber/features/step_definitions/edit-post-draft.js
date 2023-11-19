@@ -2,6 +2,7 @@ const { Given, When, Then } = require('cucumber');
 const Role = require('testcafe').Role;
 const ghostPage = require('../support/pages/ghost-page');
 const feature_name = "edit-post-draft";
+const id_post_draft="65594de9158d0e0001a570c4";
 
 Given('Ir al home ghost', async function () {
     await testController.navigateTo(ghostPage.ghost.url_4_44());
@@ -50,7 +51,7 @@ When('Ir al menu posts', async function () {
 
 When('Dar click en el boton editar', async function () {
     //await testController.click(ghostPage.ghost.boton_editar_post_draft());
-    await testController.navigateTo("http://localhost:3002/ghost/#/editor/post/6558e32164f4310001318dcb");
+    await testController.navigateTo("http://localhost:3002/ghost/#/editor/post/"+id_post_draft);
     
     
     await testController.takeScreenshot({

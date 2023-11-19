@@ -2,6 +2,7 @@ const { Given, When, Then } = require('cucumber');
 const Role = require('testcafe').Role;
 const ghostPage = require('../support/pages/ghost-page');
 const feature_name = "edit-post-draft";
+const id_post_draft="65594de9158d0e0001a570c4";
 
 Given('Go to home ghost otra url', async function () {
     await testController.navigateTo(ghostPage.ghost.url_5_73());

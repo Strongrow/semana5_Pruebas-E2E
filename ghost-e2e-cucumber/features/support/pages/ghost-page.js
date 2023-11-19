@@ -11,6 +11,7 @@ function select(selector) {
     return Selector(selector).with({ boundTestRun: testController });
 }
 
+const id_post_draft_5_73="6545db8b64420c0a1c9a51e0";
 
 exports.ghost = {
     url_4_44: function () {
@@ -137,7 +138,8 @@ exports.ghost = {
 
     boton_editar_post_draft: function () {
 
-        return select('[data-test-post-id="6545db8b64420c0a1c9a51e0"]');
+        var x="[data-test-post-id='"+id_post_draft_5_73+"']";
+        return select(x);
     },
 
     text_area_titulo_post_draft: function () {
@@ -151,7 +153,7 @@ exports.ghost = {
 
     boton_editar_post_published: function () {
         //href="#/editor/post/65591b4664f4310001318de2/
-        return select('[href="#/editor/post/65591b4664f4310001318de2/"]');
+        return select('[href="#/editor/post/65594dd3158d0e0001a570bd/"]');
     },
 
     

@@ -36,7 +36,7 @@ When('Ingreso el password incorrecto ambiente dos {string}', async function (pas
 });
 
 When('Ir al Login ambiente dos', async function () {
-    await testController.click(ghostPage.ghost.loginButton());
+    await testController.click(ghostPage.ghost.loginButton_version2());
     await testController.takeScreenshot({
         path: feature_name + "/after-4.png",
         fullPage: true,

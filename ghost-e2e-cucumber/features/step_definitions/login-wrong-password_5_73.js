@@ -36,7 +36,7 @@ When('Ingreso el password incorrecto wrong password en el otro ambiente {string}
 });
 
 When('Ir al Login wrong password en el otro ambiente', async function () {
-    await testController.click(ghostPage.ghost.loginButton());
+    await testController.click(ghostPage.ghost.loginButton_version2());
     await testController.takeScreenshot({
         path: feature_name + "/after-4.png",
         fullPage: true,
