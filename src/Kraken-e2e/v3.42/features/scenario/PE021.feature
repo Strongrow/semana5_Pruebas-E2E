@@ -1,11 +1,11 @@
 Feature: Create and publish a new post with a tag
 
 @user1 @web
-Scenario: Create and publish a new post with a tag - Scenario PE003
+Scenario: Create and publish a new post with a tag - Scenario PE021
   Given I navigate to page "http://localhost:3001/ghost/#/signin"
-  And I login with "<USER_EMAIL>" and "<USER_PASSWORD>" - Scenario PE003
+  And I login with "<USER_EMAIL>" and "<USER_PASSWORD>" - Scenario PE021
   And I wait
-  When I click on the Posts tab - Scenario PE003
+  When I click on the Posts tab - Scenario PE021
   And I wait
   And I click on 'New Post' Button
   And I wait

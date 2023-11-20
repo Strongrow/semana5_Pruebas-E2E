@@ -9,28 +9,28 @@ const { clickOnNewPost } = require("./page_objects/post_list.js");
 const { takeKrakenScreenshot } = require("./utils/takeScreenShot.js");
 
 Given(
-  "I login with {kraken-string} and {kraken-string} - Scenario PE003",
+  "I login with {kraken-string} and {kraken-string} - Scenario PE021",
   async function (email, password) {
     await login(this.driver, email, password);
-    await takeKrakenScreenshot(this.driver, "ScenarioPE003", "login");
+    await takeKrakenScreenshot(this.driver, "ScenarioPE021", "login");
   }
 );
 
-When("I click on the Posts tab - Scenario PE003", async function () {
+When("I click on the Posts tab - Scenario PE021", async function () {
   await clickOnPostsTab(this.driver);
-  await takeKrakenScreenshot(this.driver, "ScenarioPE003", "clickOnPostsTab");
+  await takeKrakenScreenshot(this.driver, "ScenarioPE021", "clickOnPostsTab");
 });
 
 When("I click on 'New Post' Button", async function () {
   await clickOnNewPost(this.driver);
-  await takeKrakenScreenshot(this.driver, "ScenarioPE003", "clickOnNewPost");
+  await takeKrakenScreenshot(this.driver, "ScenarioPE021", "clickOnNewPost");
 });
 
 When(
   "I create a new post with {kraken-string}, {kraken-string} and tag {kraken-string}",
   async function (title, content, tagname) {
     await createPost(this.driver, title, content, { tagname });
-    await takeKrakenScreenshot(this.driver, "ScenarioPE003", "createPost");
+    await takeKrakenScreenshot(this.driver, "ScenarioPE021", "createPost");
   }
 );
 
@@ -40,7 +40,7 @@ Then(
     await checkNewPostEdited(this.driver, page_title);
     await takeKrakenScreenshot(
       this.driver,
-      "ScenarioPE003",
+      "ScenarioPE021",
       "checkNewPostEdited"
     );
   }

@@ -1,67 +1,64 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
-
 const { login } = require("./page_objects/login_page.js");
 const { clickOnPostsTab } = require("./page_objects/menu_dashboard.js");
 const {
-  clickOnSettingsButton,
-  typeEscape,
-  publishItem,
-} = require("./page_objects/mutual.js");
+  createPost,
+  addImage,
+  checkPostUpdated,
+} = require("./page_objects/post_details.js");
 const { clickOnNewPost } = require("./page_objects/post_list.js");
 const {
-  assignMultipleTagsToPost,
-  checkIfPostsExists,
-  fillPostName,
-} = require("./page_objects/post_details.js");
+  clickOnCloseSettings,
+  publishItem,
+} = require("./page_objects/mutual.js");
 const { takeKrakenScreenshot } = require("./utils/takeScreenShot.js");
 
 Given(
-  "I login with {kraken-string} and {kraken-string} - Scenario PE007",
+  "I login with {kraken-string} and {kraken-string} - Scenario PE004",
   async function (email, password) {
     await login(this.driver, email, password);
-    await takeKrakenScreenshot(this.driver, "Scenario7", "login");
+    await takeKrakenScreenshot(this.driver, "ScenarioPE004", "login");
   }
 );
 
-When("I click on the Posts tab - Scenario PE007", async function () {
+When("I click on the Posts tab - Scenario PE004", async function () {
   await clickOnPostsTab(this.driver);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "goToPosts");
+  await takeKrakenScreenshot(this.driver, "ScenarioPE004", "clickOnPostsTab");
 });
 
-When("I create a new post - Scenario PE007", async function () {
+When("I click on New Post Button", async function () {
   await clickOnNewPost(this.driver);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "createPost");
+  await takeKrakenScreenshot(this.driver, "ScenarioPE004", "clickOnNewPost");
 });
 
-When("I fill post with name {kraken-string}", async function (postName) {
-  await fillPostName(this.driver, postName);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "fillPost");
-});
-
-When("I click on the post settings button - Scenario PE007", async function () {
-  await clickOnSettingsButton(this.driver);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "clickPostSettings");
-});
-
-When("I assign multiple tags to the post", async function () {
-  await assignMultipleTagsToPost(this.driver);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "addMultipleTagsToPost");
-});
-
-When("I click on close post settings - Scenario PE007", async function () {
-  await typeEscape(this.driver);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "closePostSettings");
-});
-
-When("I click update the post - Scenario PE007", async function () {
-  await publishItem(this.driver);
-  await takeKrakenScreenshot(this.driver, "Scenario7", "clickPostUpdateBtn");
-});
-
-Then(
-  "the post should be updated with the tag slug {kraken-string} - Scenario PE007",
-  async function (slug) {
-    await checkIfPostsExists(this.driver, slug);
-    await takeKrakenScreenshot(this.driver, "Scenario7", "checkPostTagSlug");
+When(
+  "I create a post with {kraken-string} and {kraken-string}",
+  async function (title, content) {
+    await createPost(this.driver, title, content);
+    await takeKrakenScreenshot(this.driver, "ScenarioPE004", "createPost");
   }
 );
+
+When("I add an image with path {kraken-string}", async function (image_path) {
+  await addImage(this.driver, image_path);
+  await takeKrakenScreenshot(this.driver, "ScenarioPE004", "addImage");
+});
+
+When("I click on close settings", async function () {
+  await clickOnCloseSettings(this.driver);
+  await takeKrakenScreenshot(
+    this.driver,
+    "ScenarioPE004",
+    "clickOnCloseSettings"
+  );
+});
+
+When("I click update on the published post", async function () {
+  await publishItem(this.driver);
+  await takeKrakenScreenshot(this.driver, "ScenarioPE004", "publishItem");
+});
+
+Then("the post should be updated with the image", async function () {
+  await checkPostUpdated(this.driver);
+  await takeKrakenScreenshot(this.driver, "ScenarioPE004", "checkPostUpdated");
+});

@@ -9,38 +9,38 @@ const {
 const { takeKrakenScreenshot } = require("./utils/takeScreenShot.js");
 
 Given(
-  "I login with {kraken-string} and {kraken-string} - Scenario PE005",
+  "I login with {kraken-string} and {kraken-string} - Scenario PE009",
   async function (email, password) {
     await login(this.driver, email, password);
-    await takeKrakenScreenshot(this.driver, "ScenarioPE005", "login");
+    await takeKrakenScreenshot(this.driver, "ScenarioPE009", "login");
   }
 );
 
-When("I click on the Posts tab - Scenario PE005", async function () {
+When("I click on the Posts tab - Scenario PE009", async function () {
   await clickOnPostsTab(this.driver);
-  await takeKrakenScreenshot(this.driver, "ScenarioPE005", "clickOnPostsTab");
+  await takeKrakenScreenshot(this.driver, "ScenarioPE009", "clickOnPostsTab");
 });
 
 When("I select a random post", async function () {
   await selectRandomPost(this.driver);
-  await takeKrakenScreenshot(this.driver, "ScenarioPE005", "selectRandomPost");
+  await takeKrakenScreenshot(this.driver, "ScenarioPE009", "selectRandomPost");
 });
 
 When(
   "I edit the selected post with title {kraken-string}",
   async function (title) {
     await fillEditPost(this.driver, title);
-    await takeKrakenScreenshot(this.driver, "ScenarioPE005", "fillEditPost");
+    await takeKrakenScreenshot(this.driver, "ScenarioPE009", "fillEditPost");
   }
 );
 
 Then(
-  "I should see the new post edited called {kraken-string} - Scenario PE005",
+  "I should see the new post edited called {kraken-string} - Scenario PE009",
   async function (page_title) {
     await checkNewPostEdited(this.driver, page_title);
     await takeKrakenScreenshot(
       this.driver,
-      "ScenarioPE005",
+      "ScenarioPE009",
       "checkNewPostEdited"
     );
   }
