@@ -3,7 +3,7 @@ import LoginPage from "../pageObjectPatron/LoginPage"
 import LogoutPage from "../pageObjectPatron/LogoutPage"  
 
 
-describe ("Funcionalidad: Scheduled V4.44", () =>{
+describe ("Funcionalidad: Visit site V4.44", () =>{
     
     const adminMenuPage = new AdminMenuPage()
     const loginPage = new LoginPage()
@@ -16,12 +16,13 @@ describe ("Funcionalidad: Scheduled V4.44", () =>{
         cy.wait(500)
     })
 
-    context("Escenario: muestra la lista de post desde la seccion Scheduled" , ()=>{
-     it("Inicia desde el login y lista publicados", ()=>{
+    context("Escenario: muestra la lista de post desde la seccion Visit Site" , ()=>{
+     it("Inicia desde el login y va a la pagina del sitio", ()=>{
         
         //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
 
+        //When, se ingresa a la seccion de 
         adminMenuPage.getMenuAdminSite()
         cy.screenshot()
         cy.wait(500)

@@ -22,6 +22,7 @@ describe ("Funcionalidad: Scheduled V4.44", () =>{
         //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
 
+        //When, se ingresa a la seccion de Scheduled
         adminMenuPage.getMenuAdminScheduled()
         cy.screenshot()
         adminMenuPage.getAllPost()

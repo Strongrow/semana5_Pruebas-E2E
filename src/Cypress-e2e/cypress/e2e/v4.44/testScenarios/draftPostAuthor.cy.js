@@ -25,7 +25,7 @@ describe ("Funcionalidad: Draft V4.44", () =>{
         draftMenuPage.getMenuAdminDrafts()
         cy.screenshot()
 
-        //When, Se verifica el despligue de menu de autor 
+         //When, Se verifica el despligue de menu filtro por autor  
         draftMenuPage.getContentFilterAuthor()
         cy.screenshot()
         cy.wait(500)

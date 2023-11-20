@@ -22,8 +22,11 @@ describe ("Funcionalidad: Draft V4.44", () =>{
         //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
 
+        //When, se ingresa a la seccion de Draft
         draftMenuPage.getMenuAdminDrafts()
         cy.screenshot()
+
+         //When, Se verifica el despligue de menu filtro por tipo
         draftMenuPage.getContentFilterType()
         cy.screenshot()
         cy.wait(500)

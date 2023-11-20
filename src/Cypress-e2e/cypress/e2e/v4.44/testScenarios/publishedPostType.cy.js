@@ -21,9 +21,12 @@ describe ("Funcionalidad: Published V4.44", () =>{
         
         //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
-
+        
+        //When, se ingresa a la seccion de Published
         publishedMenuPage.getMenuAdminPublished()
         cy.screenshot()
+
+         //When, Se verifica el despligue de menu filtro por tipo
         publishedMenuPage.getContentFilterType()    
         cy.screenshot()
         cy.wait(500)
