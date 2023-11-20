@@ -211,4 +211,11 @@ deberia quedar simiale a este
   "password": "123456789="
 } 
 
+# Reporte Manual
+Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
+
+   Ejemplo de paths a ingresar (Windows):
+
+   * C:\.\src\Cypress-e2e\cypress\screenshots\2023-11-19\v3.42.0
+   * C:\.\src\Cypress-e2e\cypress\screenshots\2023-11-19\v4.44.0
 
