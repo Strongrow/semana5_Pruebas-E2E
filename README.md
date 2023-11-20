@@ -156,8 +156,28 @@ npm install y luego si puede iniciar la ejecución de los casos. <br>
 
 En la sección https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/publio puede encontrar una guía documentada de como ejecutar un test en cada tecnología. <br>
 
+
+
 Para algunos test es necesario que digite el id del componente antes de ejecutar la prueba. Esto es debido a que para algunos test, la prueba depende de los datos de prueba para su ejecución.
 
+# Correr escenarios de pruebas en  Cypress
+
+Primer paso <br>
+Asegurese de tener instalado <br>
+
+* node version 16 o superior (Recomendada 18)
+* npm  version 6 o superior
+* git 
+
+Segundo paso
+
+* Clone el repositorio, (solo si lo ha hecho) con el comando git clone https://github.com/Strongrow/semana5_Pruebas-E2E.git desde la terminal del su maquina <br>
+
+Tercer paso 
+
+* Agregue un archivo 
+
+ 
 * Para correr las pruebas de la carpeta v4.44 
  es importante :
 
