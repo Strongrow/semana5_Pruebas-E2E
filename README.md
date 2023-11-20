@@ -142,9 +142,9 @@ Si va a utilizar docker debe correr los contenedores, es necesario tener instala
 Es Importante aclarar que la url debe ser lo que indicada para la maquina donde desea correr el Docker.<br>
 Ejemplo si va a correrlas de manera local se deberia cambiar machine-ip por localhost 
 
-*docker run -d -e url=http://localhost:3001 -p 3001:2368 --name ghost_3.42 ghost:3.42
+*docker run -d -e url=http://machine-ip:3001 -p 3001:2368 --name ghost_3.42 ghost:3.42
 
-*docker run -d -e url=http://<machine-ip>:4440 -p 4440:2368 --name ghost_4.44.0 ghost:4.44.0
+*docker run -d -e url=http://machine-ip:4440 -p 4440:2368 --name ghost_4.44.0 ghost:4.44.0
 
 # Descarga de contenido y ejecución de test
 
