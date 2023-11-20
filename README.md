@@ -135,4 +135,25 @@ En la sección https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/publio pued
 
 Para algunos test es necesario que digite el id del componente antes de ejecutar la prueba. Esto es debido a que para algunos test, la prueba depende de los datos de prueba para su ejecución.
 
+* Para correr las pruebas de la carpeta v4.44 
+ es importante :
+
+Cambiar en el archivo  /fixtures/version.json la url a probar 
+la v4 corresponde a las pruebas de la carpeta que se desea correr  
+deberia quedar similar a este 
+
+{
+    "v3": "http://localhost:3411/ghost/",
+    "v4": "http://localhost:3002/ghost"  
+}
+
+Para cambiar las credenciales de acceso es importante 
+agregarlas en la carpeta  /fixtures/version.json
+donde se debe agregar el email y password 
+deberia quedar simiale a este 
+
+{
+  "email": "pruebas@uniandes.edu.co",
+  "password": "123456789"
+} 
 
