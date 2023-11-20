@@ -10,6 +10,8 @@ describe ("Funcionalidad: Scheduled V4.44", () =>{
     const logoutPage = new LogoutPage()
 
     beforeEach (()=>{
+
+        //Given, la url del administrador del sitio
         loginPage.getVisit()
         cy.wait(500)
     })
@@ -27,6 +29,7 @@ describe ("Funcionalidad: Scheduled V4.44", () =>{
         cy.screenshot()
         cy.wait(500)
     
+        //Then, se cierra sesion
         logoutPage.getSignOutMenu().click();
         logoutPage.getSignOut().click();
                   

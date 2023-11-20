@@ -10,6 +10,7 @@ describe ("Funcionalidad: Draft V4.44", () =>{
     const logoutPage = new LogoutPage()
 
     beforeEach (()=>{
+        //Given, la url del administrador del sitio 
         loginPage.getVisit()
         cy.wait(500)
     })
@@ -17,17 +18,24 @@ describe ("Funcionalidad: Draft V4.44", () =>{
     context("Escenario: muestra el menu por Autor  seccion Draft " , ()=>{
      it("Inicia desde el login y despliega opciones del menu", ()=>{
         
+        //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
-
+        
+        //When, se ingresa a la seccion de Draft
         draftMenuPage.getMenuAdminDrafts()
         cy.screenshot()
+
+        //When, Se verifica el despligue de menu de autor 
         draftMenuPage.getContentFilterAuthor()
         cy.screenshot()
         cy.wait(500)
+
+        //When, Se regresa a dashboard 
         draftMenuPage.getMenuAdminDashboard()
         cy.screenshot()
         cy.wait(500)
     
+        //Then, se cierra sesion
         logoutPage.getSignOutMenu().click();
         logoutPage.getSignOut().click();
                   
