@@ -175,8 +175,16 @@ Segundo paso
 
 Tercer paso 
 
-* Agregue un archivo 
+* Para correr la pruebas con Cypress verifique que en al archivo package.json  se encuentre la linea "cypress:open": "cypress open" <br>
+debe ver se asi <br>
 
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+
+ * Posterior a ello use el comando npm run cypress:open <br>
+ * o el comando npx cypress run si desea ver las pruebas en la consola de la terminal 
  
 * Para correr las pruebas de la carpeta v4.44 
  es importante :
