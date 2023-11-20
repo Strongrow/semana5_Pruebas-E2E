@@ -85,6 +85,39 @@ Escenario de prueba PE019: Editar un Post en Borrador <br>
 Escenario de prueba PE020: Crear y publicar un post con tag <br>
   * En este escenario, El usuario crea un post, agrega un tag y pubica el post , y el resultado esperado es que cree el post en estado publicado.<br>
 
+# Escenarios de Prueba tratados - Ghost v4.44
+
+Escenario de prueba PE021: Muestra el menu filtro por Autor de la seccion Draft <br>
+  * En este escenario el usuuario valida el correcto de pliegue del la opcion del menu del filtro por Autor y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
+
+Escenario de prueba PE022: Muestra el menu filtro por Tag seccion Draft <br>
+  * En este escenario el usuuario valida el correcto de pliegue del la opcion del menu del filtro por Tag y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
+
+Escenario de prueba PE023: Muestra el menu filtro por recientes seccion Draft <br>
+  * En este escenario el usuario valida el correcto de pliegue del la opcion del menu del filtro por recientes y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
+  
+Escenario de prueba PE024: Muestra el menu filtro por Tipo seccion Draft <br>
+  * En este escenario el usuario valida el correcto de pliegue del la opcion del menu del filtro por Tipo y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
+
+Escenario de prueba PE025: Muestra el menu filtro por Autor de la seccion Published<br>
+  * En este escenario el usuario valida el correcto de pliegue del la opcion del menu del filtro por Autor y se espera que se despligue de manera correcta y finalmente cierra sesion.<br>
+
+Escenario de prueba PE026: Muestra el menu filtro por Tag seccion Published<br>
+  * En este escenario el usuario valida el correcto de pliegue del la opcion del menu del filtro por Tag y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
+
+Escenario de prueba PE027: Muestra el menu filtro por recientes seccion Published<br>
+  * En este escenario el usuario valida el correcto de pliegue del la opcion del menu del filtro por recientes y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>  
+
+Escenario de prueba PE028: Muestra el menu filtro por Tipo seccion Published<br>
+  * En este escenario el usuario valida el correcto de pliegue del la opcion del menu del filtro por Tipo y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>  
+
+Escenario de prueba PE029: Muestrar Post desde la  seccion Schedule<br>
+  * En este escenario el usuuario valida el correcto de pliegue de la opcion que permite mostrar todos los post desde la seccion Scheduled y se espera que se muestren los todos los post y finalmente cierra sesión.<br>
+
+Escenario de prueba PE030:  Muestra Sitio  desde el administrador <br>
+  * En este escenario el usuuario valida el correcto de pliegue de la opcion que permite mostrar el sitio a publicar  desde el admin  y finalmente cierra sesión.<br> 
+ 
+
 # Pros y contras de las herramientas
 Por favor ir al sitio: <br>
 
