@@ -19,6 +19,7 @@ describe ("Funcionalidad: Published V4.44", () =>{
     context("Escenario: muestra el menu por Autor  seccion Published " , ()=>{
      it("Inicia desde el login y despliega opciones del menu", ()=>{
         
+        //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
 
         publishedMenuPage.getMenuAdminPublished()
@@ -26,6 +27,8 @@ describe ("Funcionalidad: Published V4.44", () =>{
         publishedMenuPage.getContentFilterAuthor()
         cy.screenshot()
         cy.wait(500)
+
+        //When, Se regresa a dashboard 
         publishedMenuPage.getMenuAdminDashboard()
         cy.screenshot()
         cy.wait(500)

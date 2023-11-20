@@ -19,6 +19,7 @@ describe ("Funcionalidad: Draft V4.44", () =>{
     context("Escenario: muestra el menu  por tag  seccion Draft " , ()=>{
      it("Inicia desde el login y despliega opciones del menu", ()=>{
         
+        //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
 
         draftMenuPage.getMenuAdminDrafts()
@@ -26,6 +27,8 @@ describe ("Funcionalidad: Draft V4.44", () =>{
         draftMenuPage.getContentFilterTag()
         cy.screenshot()
         cy.wait(500)
+
+        //When, Se regresa a dashboard 
         draftMenuPage.getMenuAdminDashboard()
         cy.screenshot()
         cy.wait(500)

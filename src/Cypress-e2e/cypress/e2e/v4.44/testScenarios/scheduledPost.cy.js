@@ -18,6 +18,8 @@ describe ("Funcionalidad: Scheduled V4.44", () =>{
 
     context("Escenario: muestra la lista de post desde la seccion Scheduled" , ()=>{
      it("Inicia desde el login y lista publicados", ()=>{
+        
+        //When, se agrega las credenciales de ingreso y se ingresa al admin
         loginPage.getEmailAndPassword()
 
         adminMenuPage.getMenuAdminScheduled()
@@ -25,6 +27,8 @@ describe ("Funcionalidad: Scheduled V4.44", () =>{
         adminMenuPage.getAllPost()
         cy.screenshot() 
         cy.wait(500)
+
+        //When, Se regresa a dashboard 
         adminMenuPage.getMenuAdminDashboard()
         cy.screenshot()
         cy.wait(500)
