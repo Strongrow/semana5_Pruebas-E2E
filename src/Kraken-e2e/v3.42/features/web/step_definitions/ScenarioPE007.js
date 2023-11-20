@@ -13,7 +13,7 @@ const {
   checkIfPostsExists,
   fillPostName,
 } = require("./page_objects/post_details.js");
-const { takeKrakenScreenshot } = require("./utils/takeScreenshot.js");
+const { takeKrakenScreenshot } = require("./utils/takeScreenShot.js");
 
 Given(
   "I login with {kraken-string} and {kraken-string} - Scenario PE007",
@@ -53,13 +53,13 @@ When("I click on close post settings - Scenario PE007", async function () {
   await takeKrakenScreenshot(this.driver, "Scenario7", "closePostSettings");
 });
 
-When("I click update the post - Scenario seven", async function () {
+When("I click update the post - Scenario PE007", async function () {
   await publishItem(this.driver);
   await takeKrakenScreenshot(this.driver, "Scenario7", "clickPostUpdateBtn");
 });
 
 Then(
-  "the post should be updated with the tag slug {kraken-string} - Scenario seven",
+  "the post should be updated with the tag slug {kraken-string} - Scenario PE007",
   async function (slug) {
     await checkIfPostsExists(this.driver, slug);
     await takeKrakenScreenshot(this.driver, "Scenario7", "checkPostTagSlug");

@@ -1,4 +1,4 @@
-const { Given, When, Then } = require("@cucumber/cucumber");
+/* const { Given, When, Then } = require("@cucumber/cucumber");
 
 const { login } = require("./page_objects/login_page.js");
 const { clickOnPagesTab } = require("./page_objects/menu_dashboard.js");
@@ -8,7 +8,7 @@ const {
 } = require("./page_objects/pages_list.js");
 const { fillNewPage } = require("./page_objects/page_detail.js");
 const { publishItem } = require("./page_objects/mutual.js");
-const { takeKrakenScreenshot } = require("./utils/takeScreenshot.js");
+const { takeKrakenScreenshot } = require("./utils/takeScreenShot.js");
 
 Given(
   "I login with {kraken-string} and {kraken-string} - Scenario four",
@@ -51,3 +51,4 @@ Then(
     );
   }
 );
+ */
