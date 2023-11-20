@@ -125,10 +125,9 @@ https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/Resumen_Herramientas <br>
 
 # Versiones de Ghosts (Docker)
 
-Para crear estas pruebas utilizamos  las  versiones La v3.41.1 y la v4.44.0.
-que  se encuentran en los siguientes contenedores. <br>
-
-Para correr los contenedores es necesario tener instalado Docker en su maquina y en el consola o terminar ejecutar los siguientes comandos. <br>
+Para crear estas pruebas utilizamos  las  versiones <br>
+ * La v3.41.1 y la v4.44.0. <br>
+Si va a utilizar docker debe correr los contenedores es necesario tener instalado Docker en su maquina y en el consola o terminar ejecutar los siguientes comandos. <br>
 
 Es Importante aclarar que la url y el puesto deben ser lo que indicados para la maquina donde desea correr el Docker.<br>
 Ejemplo si va a correrlas de manera local se deberia cambiar machine-ip por localhost 
