@@ -12,6 +12,10 @@ class AdminMenuPage
         return cy.get('.gh-nav-top').find('a').contains('Dashboard').click();
     }
 
+    getMenuAdminSite(){
+        return cy.get('.gh-nav-top').find('a').contains('View site').click();
+    }
+
     getContentFilterType(){
         return cy.get('.gh-contentfilter-type > .ember-view')
     }
