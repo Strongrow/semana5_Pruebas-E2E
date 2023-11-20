@@ -167,7 +167,8 @@ Asegurese de tener instalado <br>
 
 * node version 16 o superior (Recomendada 18)
 * npm  version 6 o superior
-* git 
+* git
+* Cypress ver (https://docs.cypress.io/guides/getting-started/installing-cypress)
 
 Segundo paso
 
