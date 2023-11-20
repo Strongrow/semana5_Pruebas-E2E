@@ -111,20 +111,10 @@ Ejemplo de salida: <br>
 
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142330691/3f10ab3f-b48e-4831-8b1f-6cb7f08fe1a7)
 
+Ejemplo de salida:
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+[screenshots.zip](https://github.com/Strongrow/semana5_Pruebas-E2E/files/13406237/screenshots.zip)
 
 
 
