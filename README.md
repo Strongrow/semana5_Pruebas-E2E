@@ -5,6 +5,8 @@ Publio Diaz p.diazp@uniandes.edu.co <br>
 Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
 Lucas Omar Blandon   l.blandon@uniandes.edu.co <br>
 
+# Video Semana 6 VRT 
+   https://youtu.be/nt6aLvvrR8E
 # Funcionalidades 
 
 1. Ingreso Ghost: Esta funcionalidad contribuye a la confirmación de la identidad del usuario y fortalece la protección de los datos en el sitio web al limitar el acceso a información confidencial. <br>
