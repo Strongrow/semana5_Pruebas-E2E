@@ -123,16 +123,26 @@ Por favor ir al sitio: <br>
 
 https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/Resumen_Herramientas <br>
 
+
+# Kraken
+1. Ir a la carpeta de kraken y a la versión que desea correr las pruebas con cd src/kraken/v3.42 ó src/kraken/v4.44.0 <br>
+2. Instalar las dependencias del Package.json ejecutar npm install  <br>
+3. Modificar el archivo de configuración para asignar los valores deseados por el usuario. El archivo se encuentra en: src/kraken/properties.json. Es importante notar que acá se encuentran las credenciales a usar en los escenarios de prueba, por lo que es necesario que sean modificados de acorde a las preferencias del tester. <br>
+4. Copiar el escenario deseado para ejecutar en el archivo RunningScenario.feature (Los escenarios se encuentran en src/kraken/v3.42/features/scenarios ó src/kraken/v4.44.0/features/scenarios).<br>
+
+Ejecutar el comando npx kraken-node run.<br>
+
+
 # Versiones de Ghosts (Docker)
 
 Para crear estas pruebas utilizamos  las  versiones <br>
- * La v3.41.1 y la v4.44.0. <br>
+ * La v3.42 y la v4.44.0. <br>
 Si va a utilizar docker debe correr los contenedores, es necesario tener instalado Docker en su maquina y en el consola o terminar ejecutar los siguientes comandos. <br>
 
 Es Importante aclarar que la url debe ser lo que indicada para la maquina donde desea correr el Docker.<br>
 Ejemplo si va a correrlas de manera local se deberia cambiar machine-ip por localhost 
 
-*docker run -d -e url=http://<machine-ip>:3411 -p 3411:2368 --name ghost_3.41.1 ghost:3.41.1
+*docker run -d -e url=http://localhost:3001 -p 3001:2368 --name ghost_3.42 ghost:3.42
 
 *docker run -d -e url=http://<machine-ip>:4440 -p 4440:2368 --name ghost_4.44.0 ghost:4.44.0
 
@@ -156,7 +166,7 @@ la v4 corresponde a las pruebas de la carpeta que se desea correr
 deberia quedar similar a este 
 
 {
-    "v3": "http://localhost:3411/ghost/",
+    "v3": "http://localhost:3001/ghost/",
     "v4": "http://localhost:3002/ghost"  
 }
 
@@ -167,6 +177,7 @@ deberia quedar simiale a este
 
 {
   "email": "pruebas@uniandes.edu.co",
-  "password": "123456789"
+  "password": "123456789="
 } 
+
 
