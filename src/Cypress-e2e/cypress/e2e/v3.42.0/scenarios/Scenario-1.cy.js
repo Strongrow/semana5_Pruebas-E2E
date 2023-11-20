@@ -5,9 +5,11 @@ import { takeCypressScreenshot } from "../utils/takeScreenshot";
 describe("Scenario-1", () => {
 
     it("Login", () => {
-        // Given user is logged in
+        // Given the user has the credentials 
+        // When user enters credentials
+        // Then user is logged in
         let signinPage = new SignInPage();
-        let homePage = signinPage.login(config.user, config.password);
+        signinPage.login(config.user, config.password);
         takeCypressScreenshot("login")
        
     })

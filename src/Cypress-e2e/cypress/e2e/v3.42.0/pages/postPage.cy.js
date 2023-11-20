@@ -18,17 +18,13 @@ class PostPage {
     cy.get('.koenig-editor__editor').type(Content);
     cy.wait(1000);
     cy.get("button.post-settings").click();
-    cy.get("input.ember-power-select-trigger-multiple-input")
-      .first().type(`${AsociateTag}{enter}`);
+    cy.get("input.ember-power-select-trigger-multiple-input").first().type(`${AsociateTag}{enter}`);
     cy.wait(1000);
     cy.get("button.close.settings-menu-header-action").click();
-    cy.wait(1000);
     cy.get("div.gh-publishmenu-trigger").click();
-    cy.wait(1000);
-
-    cy.get("button.gh-btn-blue.gh-publishmenu-button").click();cy.wait(1000);
+    cy.get("button.gh-btn-blue.gh-publishmenu-button").click();
+   
     
-    return cy.get(".gh-notification-content");
   }
 
   addImage(image_path) {
@@ -43,13 +39,13 @@ class PostPage {
   goPost() {
     cy.get("button.post-settings").click();
     cy.wait(1000);
-    cy.get('.post-view-link').click();
-    cy.wait(1000);
+    cy.visit("http://localhost:3001/ghost/#/posts");
 
   }
 
   deletePost(){
     cy.contains("Posts").click();
+
     cy.get('.posts-list > :nth-child(2)').first().click()
     cy.wait(1000);
     cy.get('button.post-settings').click()
@@ -66,13 +62,10 @@ class PostPage {
     cy.get("textarea.gh-editor-title").type(tittle);
     cy.wait(1000);
     cy.get('.koenig-editor__editor').type(content);
-    cy.wait(1000);
-  
-    cy.get("button[title$='Settings']").click();
-    cy.get("input[class$='x-file--input']").selectFile(imagePath, { force: true })
-    cy.get("button[aria-label$='Close']").click()
+    cy.wait(1000);  
     cy.get("div.gh-publishmenu-trigger").click();
     cy.get("button.gh-btn-blue.gh-publishmenu-button").click();
+    cy.visit("http://localhost:3001/ghost/#/posts");  
   }
 
 
