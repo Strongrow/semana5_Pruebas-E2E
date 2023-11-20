@@ -131,7 +131,7 @@ que  se encuentran en los siguientes contenedores. <br>
 Para correr los contenedores es necesario tener instalado Docker en su maquina y en el consola o terminar ejecutar los siguientes comandos. <br>
 
 Es Importante aclarar que la url y el puesto deben ser lo que indicados para la maquina donde desea correr el Docker.<br>
-Ejemplo si va a correrlas de manera local se deberia cambiar <<machine-ip>> por localhost 
+Ejemplo si va a correrlas de manera local se deberia cambiar machine-ip por localhost 
 
 *docker run -d -e url=http://<machine-ip>:3411 -p 3411:2368 --name ghost_3.41.1 ghost:3.41.1
 
