@@ -45,6 +45,11 @@ const clickOnProfileMenu = async function (driver) {
   await profileButton.click();
 };
 
+const clickOnSettings = async function (driver) {
+  let settings = await driver.$("a[href*='#/settings/']");
+  await settings.click();
+};
+
 const clickOnLogout = async function (driver) {
   let profileMenu = await driver.$("span[class$='gh-user-name mb1']");
   await profileMenu.click();
@@ -69,4 +74,5 @@ module.exports = {
   clickOnLogout,
   checkAdminMenu,
   clickOnIntegrationTab,
+  clickOnSettings,
 };

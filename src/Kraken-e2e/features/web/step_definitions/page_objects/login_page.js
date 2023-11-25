@@ -2,11 +2,11 @@ const { expect } = require("chai");
 const { until, executeScript } = require("selenium-webdriver");
 
 const login = async function (driver, email, password) {
-  let emailElement = await driver.$("#ember7");
+  let emailElement = await driver.$("[class$='gh-input email']");
   await emailElement.setValue(email);
-  let passwordElement = await driver.$("#ember9");
+  let passwordElement = await driver.$("#password");
   await passwordElement.setValue(password);
-  let loginButton = await driver.$("#ember11");
+  let loginButton = await driver.$("#ember5");
   await loginButton.click();
 };
 

@@ -1,8 +1,8 @@
 {
-    "GHOST_VER": "4.44.0",
-    "USER_EMAIL": "pruebas@uniandes.edu.co",
-    "USER_PASSWORD": "123456789=",
-    "URL_HOME_PAGE":"http://localhost:3002/ghost/#/site",
+    "GHOST_VER": "5.73.2",
+    "USER_EMAIL": "user@example.com",
+    "USER_PASSWORD": "Admin12345",
+    "URL_HOME_PAGE":"http://35.244.81.193/ghost/#/dashboard",
     "PAGE_TITLE": "Ghost Test",
     "PAGE_IMAGE_PATH": "./assets/pulpo-tentaculos-nada-tranquila-aventura-submarina-generada-ia.jpg",
     "TAG_NAME": "Kraken Tag",
