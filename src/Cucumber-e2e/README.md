@@ -131,6 +131,7 @@ Ejemplo de salida: <br>
 
 <hr>
 <hr>
+
 # Semana 6
 
 # Integración de Gherkin y CucumberJS sobre Ghost
