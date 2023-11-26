@@ -97,6 +97,13 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 | 13   | login-wrong-password.js  |Como usuario quiero logearme con un usuario correcto y un password incorrecto  | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 14   | login-wrong-user.feature | Como usuario quiero logearme con un usuario incorrecto y password correcto   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 15   | login-wrong-credentials.feature | Como usuario quiero logearme con un usuario y password incorrectos   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 16   | search_general_settings_v10.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu general settings  | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 17   | search_site_v11.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Site   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 18   | search_membership_v12.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Memberships  | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 19   | search_email_newsletter_v13.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Email newsletter   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 20   | search_advanced_v14.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Advanced   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+
+
 
 
 ## Ejecutar los tests 
