@@ -107,6 +107,7 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 | 23   | filter_post_option_v17.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All Access   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 24   | filter_post_option_v18.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All Authors   | Aleatorio. <br>Se utiliza Faker | Debe haber minimo tres autores |
 | 25   | filter_post_option_v19.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All tags   | Aleatorio. <br>Se utiliza Faker | Debe haber minimo tres tags |
+| 26   | filter_post_option_v20.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en Newest first   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 
 
 
