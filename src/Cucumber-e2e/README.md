@@ -103,6 +103,12 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 | 19   | search_email_newsletter_v13.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Email newsletter   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 20   | search_advanced_v14.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Advanced   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 21   | change_options_day_dashboard_v15.feature |Como usuario quiero logearme en el sistema ghost y poder seleccionar al azar las opciones de Days   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 22   | filter_post_option_v16.feature |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 23   | filter_post_option_v17.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All Access   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 24   | filter_post_option_v18.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All Authors   | Aleatorio. <br>Se utiliza Faker | Debe haber minimo tres autores |
+| 25   | filter_post_option_v19.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All tags   | Aleatorio. <br>Se utiliza Faker | Debe haber minimo tres tags |
+
+
 
 
 
