@@ -102,6 +102,7 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 | 18   | search_membership_v12.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Memberships  | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 19   | search_email_newsletter_v13.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Email newsletter   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 | 20   | search_advanced_v14.feature | Como usuario quiero logearme en el sistema ghost y poder realizar una busqueda sobre el submenu Advanced   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 21   | change_options_day_dashboard_v15.feature |Como usuario quiero logearme en el sistema ghost y poder seleccionar al azar las opciones de Days   | Aleatorio. <br>Se utiliza Faker | Ninguna |
 
 
 
