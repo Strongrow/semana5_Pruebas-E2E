@@ -130,7 +130,6 @@ Ejemplo de salida: <br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142330691/f192c034-07b0-41de-96be-3b4c746a696a)
 
 <hr>
-<hr>
 
 # Semana 6
 
