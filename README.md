@@ -246,10 +246,10 @@ debe ver se asi
 * o el comando npx cypress run si desea ver las pruebas en la consola de la terminal<br>
 
 # Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Cypress)
-* En la carpeta Apriori se encuentran los escenarios construidos con esa estrategia <br> <br>
+* En la carpeta Apriori (Ver imagen)se encuentran los escenarios construidos con esa estrategia, los cuales utlizan los archivos Json como referencia en los escenarios <br> <br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/4c0d484b-d88d-4414-aed8-e1b2b6c0a453)
 
-* En la carpeta se encuentra el patron que interactua con los escenarios para la estrategia Apriori y Aleatoria representadas los archivos DatafakerPage.js( aleatorio dinámico) y DataMockPage.js (Datos Apriori)<br> <br>
+* En la carpeta pageObjectPatron (Ver imagen)se encuentra el patron que interactua con los escenarios para la estrategia Apriori y Aleatoria representadas los archivos DatafakerPage.js( aleatorio dinámico) y DataMockPage.js (Datos Apriori)<br> <br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/c2ca342d-d9f5-4e3f-95ea-44e6eadcd0e1)
 
 # Reporte Manual
