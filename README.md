@@ -214,7 +214,7 @@ deberia quedar simiale a este
 } 
 
 # Correr escenarios de pruebas en  Cypress (Semana 7)
-Las pruebas se realizaron a una version de Ghost que se encuentra en http://35.244.81.193/ghost<br>
+Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/14d01898-fd16-488f-94a5-109a6453edec)
 
 Primer paso<br>
