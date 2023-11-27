@@ -8,5 +8,6 @@
     "TAG_NAME": "Kraken Tag",
     "POST_TITLE": "New Title",
     "POST_CHANGE_TITLE":"CHANGE TITLE",
-    "POST_CONTENT": "New Content"
+    "POST_CONTENT": "New Content",
+    "INVITE_EMAIL": "juancahawk@hotmail.com"
 }
