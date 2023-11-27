@@ -108,6 +108,7 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 | 24   | filter_post_option_v18.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All Authors   | Aleatorio. <br>Se utiliza Faker | Debe haber minimo tres autores |
 | 25   | filter_post_option_v19.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en All tags   | Aleatorio. <br>Se utiliza Faker | Debe haber minimo tres tags |
 | 26   | filter_post_option_v20.js |Como usuario quiero logearme en el sistema ghost y poder seleccionar un filtro al azar de las opciones de post en Newest first   | Aleatorio. <br>Se utiliza Faker | Ninguna |
+| 27   | create_custom_integration_v21.feature |Como usuario quiero logearme en el sistema ghost y poder crear un custom integrations   |  Pseudo aleatorio. <br>Se hace uso de Mokaroo API<br> Endpoint: https://my.api.mockaroo.com/tags.json?key=3856ffb0 | Ninguna |
 
 
 
