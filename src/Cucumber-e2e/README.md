@@ -56,25 +56,25 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 
 ## Instalación y preparación de datos iniciales
 
-1. Asegurarse de tener ghost 5.73 ejecutando en http://localhost:2368/ghost/ 
-2. Asegurarse de tener [Nodejs](https://nodejs.org/) instalado
-3. Para la versión de Ghost 5.73 se utiliza node 18.18.1 y para el proyecto de cucumber utilizamos el node 14.21.3
-4. Una vez instalado el ghost 5.73 puede ejecutar la herramienta ghost doctor para verificar que este correcto.
-5. Se recomienda utilizar la herramienta nvm con el fin de poder cambiar de versiones entre node ver https://4geeks.com/es/how-to/como-instalar-nvm-en-windows
-6. Descargar el proyecto y navegar a la raíz del repositorio Cucumber-e2e.
-7. Usar el comando `npm install` 
-8. Fijarse que se instalen las dependencias de lo contrario instalarlas manualmente con npm install <Libreria>.
-9. Una vez instalado el ghost en la versión 5.73 siga los pasos iniciales y cree un usuario con email pruebas1711_1@yopmail.com password 123456789=
-10. Una vez instalado el ghost en la version 5.73 siga los pasos iniciales y cree un usuario con email p.diazp@uniandes.edu.co password 123456789=
+1. Si se desea se puede utiliar el host http://35.244.81.193/ghost/ de lo contrario seguir los pasos de instalación local.
+2. Asegurarse de tener ghost 5.73 ejecutando en http://localhost:2368/ghost/ o utilizar el host http://35.244.81.193/ghost/
+3. Asegurarse de tener [Nodejs](https://nodejs.org/) instalado o utilizar el host http://35.244.81.193/ghost/
+4. Para la versión de Ghost 5.73 se utiliza node 18.18.1 y para el proyecto de Cucumber utilizamos el node 14.21.3
+5. Una vez instalado el ghost 5.73 puede ejecutar la herramienta ghost doctor para verificar que este correcto.
+6. Se recomienda utilizar la herramienta nvm con el fin de poder cambiar de versiones entre node ver https://4geeks.com/es/how-to/como-instalar-nvm-en-windows
+7. Descargar el proyecto y navegar a la raíz del repositorio Cucumber-e2e.
+8. Usar el comando `npm install` 
+9. Fijarse que se instalen las dependencias de lo contrario instalarlas manualmente con npm install <Libreria>.
+10. Una vez instalado el ghost en la versión 5.73 siga los pasos iniciales y cree un usuario con email user@example.com password Admin12345
 11. Ingresar al sistema ghost con la version 5.73 y crear un post y dejarlo en draft ( esto es para tener una semilla de los casos de pruebas ).
 12. Copiar el id del post en draft en el fichero edit-post-draft.js en la constante id_post_draft
-14. ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142330691/f65ba369-cfae-443b-84b9-21a3e689a050)
-15. Crear un post y publicarlo, luego copiar el id del post publicado de la versión 5.73 y ponerlo en el fichero ghost-page.js, en el metodo "boton_editar_post_published". (ver imagen aterior para guia)
+13. ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142330691/f65ba369-cfae-443b-84b9-21a3e689a050)
+14. Crear un post y publicarlo, luego copiar el id del post publicado de la versión 5.73 y ponerlo en el fichero ghost-page.js, en el metodo "boton_editar_post_published". (ver imagen aterior para guia)
      
 ## Lista de casos de prueba
 
 ## Nota
-* Tener el sistema ghost iniciado en http://localhost:2368/ghost
+* Tener el sistema ghost iniciado en http://localhost:2368/ghost o utilizar el host http://35.244.81.193/ghost/
 * Dependiendo del escenario a ejecutar tener en cuenta la columna de observaciones
 * Ubicarse dentro del directorio Cucumber-e2e
 * Ejecutar el comando npm test -t .\features\<NOMBRE_PRUEBA_A_EJECUTAR>.feature
