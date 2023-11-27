@@ -1,87 +1,56 @@
 const { Given, When, Then } = require('cucumber');
 const Role = require('testcafe').Role;
 const ghostPage = require('../support/pages/ghost-page');
-const feature_name = "edit-post-published";
+const {faker}=require('@faker-js/faker'); 
 
 Given('Home de ghost', async function () {
-    await testController.navigateTo(ghostPage.ghost.url_4_44());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-1.png",
-        fullPage: true,
-    });
+    await testController.navigateTo(ghostPage.ghost.url());
 });
 
 When('Digitar el usuario {string}', async function (username) {
     await testController.typeText(ghostPage.ghost.loginUsername(), username);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-2.png",
-        fullPage: true,
-    });
 });
 
 When('Digitar el password {string}', async function (password) {
     await testController.typeText(ghostPage.ghost.loginPassword(), password);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-3.png",
-        fullPage: true,
-    });
 });
 
 When('Dar en boton Login', async function () {
     await testController.click(ghostPage.ghost.loginButton());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-4.png",
-        fullPage: true,
-    });
 });
 
 
 When('Dar en menu posts', async function () {
     await testController.click(ghostPage.ghost.menuPost());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-5.png",
-        fullPage: true,
-    });
 });
 
 When('Dar en el boton editar', async function () {
+
     await testController.click(ghostPage.ghost.boton_editar_post_published());
-   
-       
-   //gh-publishmenu ember-view
-    await testController.takeScreenshot({
-        path: feature_name + "/before-6.png",
-        fullPage: true,
-    });
+
 });
 
 When('Editar el titulo del post publicado {string}', async function (titulo) {
-    await testController.typeText(ghostPage.ghost.text_area_titulo_post_published(), titulo);
+
+    //Se trae texto aleatorio para el titulo con el uso de faker
+    //var titulo_aleatorio = faker.lorem.paragraph();
+    var titulo_aleatorio = faker.lorem.words(5);
+    console.log("valor del titulo ... " + titulo_aleatorio);
+
+
+    await testController.typeText(ghostPage.ghost.text_area_titulo_post_published(), titulo_aleatorio);
     await testController.click(ghostPage.ghost.boton_menu_publicar());
     await testController.click(ghostPage.ghost.boton_menu_update_publicar());
-    
-   
-    await testController.takeScreenshot({
-        path: feature_name + "/before-7.png",
-        fullPage: true,
-    });
+
 });
 
 
 When('Dar en boton update', async function () {
     await testController.click(ghostPage.ghost.menuPost());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-8.png",
-        fullPage: true,
-    });
 });
 
 When('Volver a posts', async function () {
     await testController.click(ghostPage.ghost.menuPost());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-9.png",
-        fullPage: true,
-    });
 });
 
 

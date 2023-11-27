@@ -11,15 +11,34 @@ function select(selector) {
     return Selector(selector).with({ boundTestRun: testController });
 }
 
-const id_post_draft_5_73 = "6545db8b64420c0a1c9a51e0";
+const id_post_draft_5_73 = "6563f70b930dd2098beace6e";
 
 exports.ghost = {
+
+    url: function () {
+        return 'http://35.244.81.193/ghost/';
+    },
     url_4_44: function () {
         return 'http://localhost:3002/ghost';
     },
     url_5_73: function () {
         return 'http://localhost:2368/ghost';
     },
+    url_profile: function () {
+        return 'http://35.244.81.193/ghost/#/settings/staff/user';
+    },
+    url_integrations: function () {
+        return 'http://localhost:2368/ghost/#/settings/integrations';
+    },
+
+    url_integrations_new: function () {
+        return 'http://localhost:2368/ghost/#/settings/integrations/new';
+    },
+
+    campo_nombre_integracion: function () {
+        return select('[placeholder="Custom integration"]');
+    },
+
 
     loginUsername: function () {
         return select('[name="identification"]');
@@ -31,7 +50,6 @@ exports.ghost = {
     },
 
     loginUsername_version2: function () {
-        //return select('input#identification');
         return select('[name="identification"]');
     },
 
@@ -40,14 +58,25 @@ exports.ghost = {
 
     },
 
+    
+    imgProfile: function () {
+        return select('[data-testid="owner-user"]');
+
+    },
+
+    nombreProfile: function () {
+        return select('[type="text"]').nth(0);
+
+    },
+
     cajaBusqueda: function () {
         return select('.gh-nav-btn-search');
     },
 
     loginButton: function () {
-        //return select('[data-test-button="sign-in"]');
         return select('[type="submit"]');
     },
+
     loginButton_version2: function () {
         return select('[data-test-button="sign-in"]');
 
@@ -71,9 +100,18 @@ exports.ghost = {
     menuPost: function () {
         return select('[href="#/posts/"]');
     },
+    
 
     botonNewTag: function () {
         return select('[href="#/tags/new/"]');
+    },
+
+    botonSaveAndClose: function () {
+        return select('span').withText('Save & close');
+    },
+
+    botonAddIntegration: function () {
+        return select('span').withText('Add');
     },
 
     newTag_tag_name: function () {
@@ -82,14 +120,44 @@ exports.ghost = {
 
     newTag_data_test_input: function () {
         return select('[name="accent-color"]');
-        //return select('[placeholder="abcdef"]');
 
     },
 
     newTag_tag_description: function () {
-        //return select('[data-test-input="tag-description"]');
         return select('[name="description"]');
 
+    },
+    newTag_meta_title: function () {
+        return select('[name="metaTitle"]');
+    },
+
+    newTag_meta_description: function () {
+        return select('[name="metaDescription"]');
+
+    },
+
+    newTag_canonical_url: function () {
+        return select('[name="canonicalUrl"]');
+
+    },
+
+    newTag_twitter_title: function () {
+        return select('[id="twitterTitle"]');
+
+    },
+
+    newTag_twitter_description: function () {
+
+        return select('[name="twitterDescription"]');
+    },
+
+    newTag_og_title: function () {
+        return select('[name="ogTitle"]');
+    },
+
+
+    newTag_og_description: function () {
+        return select('[name="ogDescription"]');
     },
 
     buttonSaveNewTag: function () {
@@ -153,7 +221,7 @@ exports.ghost = {
 
     boton_editar_post_published: function () {
         //href="#/editor/post/65591b4664f4310001318de2/
-        return select('[href="#/editor/post/65594dd3158d0e0001a570bd/"]');
+        return select('[href="#/editor/post/6563f6aa930dd2098beace63/"]');
     },
 
 
@@ -165,18 +233,19 @@ exports.ghost = {
     boton_preview: function () {
         return select('span').withText("Preview");
     },
+
     boton_menu_publish: function () {
 
         return select('.gh-publishmenu-section');
     },
 
     boton_publish: function () {
-        
+
         return select('span').withText("Publish");
     },
 
     boton_publish_2: function () {
-        
+
         return select('.gh-btn gh-btn-black gh-publishmenu-button gh-btn-icon ember-view');
     },
     div_area_libre: function () {
@@ -186,6 +255,36 @@ exports.ghost = {
     boton_nuevo_post: function () {
 
         return select('span').withText("New post");
+    },
+    
+    msg_tag_name_err: function () {
+
+        return select('p').withText("Tag names cannot be longer than 191 characters.");
+    },
+    msg_error_upload_file: function () {
+
+        return select('div').withText("The image type you uploaded is not supported. Please use .GIF, .JPG, .JPEG, .PNG, .SVG, .SVGZ, .WEBP");
+    },
+    msg_tag_color_err: function () {
+
+        return select('p').withText("The colour should be in valid hex format");
+    },
+    msg_tag_slug_err: function () {
+
+        return select('p').withText("URL cannot be longer than 191 characters.");
+    },
+
+    msg_tag_description_err: function () {
+
+        return select('p').withText("Description cannot be longer than 500 characters.");
+    },
+    
+    boton_uplad_image_tag: function () {
+
+        //return select('span').withText("Upload tag image");
+        
+        return select('[type="file"]').nth(0);
+
     },
 
     titulo_post: function () {
@@ -201,6 +300,9 @@ exports.ghost = {
 
     text_area_titulo_post_published: function () {
         return select('[placeholder="Post title"]');
+    },
+    texto_slug: function () {
+        return select('[name="slug"]');
     },
 
     boton_update_post_published: function () {

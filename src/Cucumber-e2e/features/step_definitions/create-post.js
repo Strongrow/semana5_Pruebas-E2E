@@ -1,70 +1,52 @@
 const { Given, When, Then } = require('cucumber');
 const ghostPage = require('../support/pages/ghost-page');
-const feature_name = "create-post";
 
 
 Given('Navegar al Home de ghost', async function () {
 
-    await testController.navigateTo(ghostPage.ghost.url_4_44());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-1.png",
-        fullPage: true,
-    });
+    await testController.navigateTo(ghostPage.ghost.url());
 });
 
 When('Digitar usuario {string}', async function (username) {
     await testController.typeText(ghostPage.ghost.loginUsername(), username);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-2.png",
-        fullPage: true,
-    });
 });
 
 When('Digitar password {string}', async function (password) {
     await testController.typeText(ghostPage.ghost.loginPassword(), password);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-3.png",
-        fullPage: true,
-    });
+
 });
 
 
 When('Ingresar dashborad', async function () {
     await testController.click(ghostPage.ghost.loginButton());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-4.png",
-        fullPage: true,
-    });
+
 });
 
 
 
 When('Ir al menu de post', async function () {
     await testController.click(ghostPage.ghost.menuPost());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-5.png",
-        fullPage: true,
-    });
+
 });
 
 
 When('Boton de new post', async function () {
     await testController.click(ghostPage.ghost.boton_nuevo_post());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-6.png",
-        fullPage: true,
-    });
+
 });
 
 When('Ingresar el titulo del post {string}', async function (titulo) {
-    await testController.typeText(ghostPage.ghost.titulo_post(), titulo);
+
+    //Se trae texto aleatorio para el titulo con el uso de Mockaroo APIs
+    const response = await testController.request("https://my.api.mockaroo.com/post.json?key=3856ffb0");
+    var titulo_aleatorio = response.body[0].title;
+    console.log("valor del titulo ... " + titulo_aleatorio);
+
+    await testController.typeText(ghostPage.ghost.titulo_post(), titulo_aleatorio);
     await testController.click(ghostPage.ghost.div_area_libre());
 
 
-    await testController.takeScreenshot({
-        path: feature_name + "/before-7.png",
-        fullPage: true,
-    });
+
 });
 
 
@@ -74,10 +56,7 @@ When('Click en publish', async function () {
     await testController.click(ghostPage.ghost.menuPost());
 
 
-    await testController.takeScreenshot({
-        path: feature_name + "/before-8.png",
-        fullPage: true,
-    });
+
 });
 
 Then('Validamos la creacion del post', async function () {

@@ -45,6 +45,7 @@
     "testcafe": "^1.20.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "eslint-config-google": "^0.9.1"
   }
 }

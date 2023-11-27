@@ -1,46 +1,44 @@
 const { Given, When, Then } = require('cucumber');
 const ghostPage = require('../support/pages/ghost-page');
-const feature_name = "login-wrong-credentials";
+const {faker}=require('@faker-js/faker'); 
 
 
 Given('Inicio de ghost', async function () {
 
-    await testController.navigateTo(ghostPage.ghost.url_4_44());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-1.png",
-        fullPage: true,
-    });
+    await testController.navigateTo(ghostPage.ghost.url());
+
 });
 
 When('Ingreso el usuario incorrecto {string}', async function (username) {
-    await testController.typeText(ghostPage.ghost.loginUsername(), username);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-2.png",
-        fullPage: true,
-    });
+
+    //Se trae una cuenta de email aleatoria con el uso de faker
+    var user_email_aleatorio = faker.internet.email();
+    
+    console.log("valor de email ... " + user_email_aleatorio);
+
+    await testController.typeText(ghostPage.ghost.loginUsername(), user_email_aleatorio);
+
 });
 
 When('Ingreso el password incorrecto {string}', async function (password) {
-    await testController.typeText(ghostPage.ghost.loginPassword(), password);
-    await testController.takeScreenshot({
-        path: feature_name + "/before-3.png",
-        fullPage: true,
-    });
+
+    //Se trae un texto de password aleatorio con el uso de faker
+    var password_aleatorio = faker.internet.password();
+    console.log("valor de password ... " + password_aleatorio);
+
+    await testController.typeText(ghostPage.ghost.loginPassword(), password_aleatorio);
 });
 
 When('Ir al Login', async function () {
     await testController.click(ghostPage.ghost.loginButton());
-    await testController.takeScreenshot({
-        path: feature_name + "/before-4.png",
-        fullPage: true,
-    });
+
 });
 
 Then('Verificamos el mensaje de error', async function () {
 
     const verificaMensaje = await ghostPage.ghost.mensaje_error_usuario_password().innerText;
     //console.log("*************** " + verificaMenuPost);
-    await testController.expect(verificaMensaje).contains("Please fill out the form to sign in.");
+    await testController.expect(verificaMensaje).contains("There is no user with that email address.");
 
 
 });
