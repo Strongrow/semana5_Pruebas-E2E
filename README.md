@@ -232,7 +232,16 @@ y en la termina desde la ubicacion del directorio instalado use el comando npm i
 Tercer paso<br>
 
 * Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen <br>
+
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/f8772036-c03d-4c12-a4ba-3903b4ad84ed)
+
+* La carpeta utils tiene en su interior, 4 carpetas que usadas para agregar archivos de audio, texto, video e imagen los cuales son necesarios para las pruebas con la estrategia Apriori<br>
+* Si agrega archivo a estas carpetas, escriba el nombre de los mismos en el archivo MOCK_DATA.json <br>
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/9b5c62f1-4df0-4711-b43c-0592d554fa56)
+
+Ejemplo<br>
+* solo edite la parte fin de cada ruta<br> 
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/2e0747eb-4377-4108-b269-86fe4a0060cb)
 
 
 Cuarto paso<br>
