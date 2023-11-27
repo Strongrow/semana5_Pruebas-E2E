@@ -27,11 +27,12 @@ When('Ir al boton Login', async function () {
 
 
 When('Ir al menu posts', async function () {
-    await testController.navigateTo("http://35.244.81.193/ghost/#/posts?type=draft");
+    await testController.navigateTo("http://35.244.81.193/ghost/#/post");
 
 });
 
 When('Dar click en el boton editar', async function () {
+    await testController.wait(2000)
     //await testController.click(ghostPage.ghost.boton_editar_post_draft());
     await testController.navigateTo("http://35.244.81.193/ghost/#/editor/post/6563f70b930dd2098beace6e");
 
@@ -51,15 +52,15 @@ When('Editar el titulo del post borrador agregando texto {string}', async functi
 
 
 When('Volver a los posts', async function () {
-    await testController.click(ghostPage.ghost.menuPost());
-    //await testController.navigateTo("http://localhost:3002/ghost/#/posts?type=draft");
+    await testController.navigateTo("http://35.244.81.193/ghost/#/post");
+ //await testController.navigateTo("http://localhost:3002/ghost/#/posts?type=draft");
 
 });
 
 
 Then('Verificar el campo de nombre editado', async function () {
 
-    const nombreEditado = await testController.navigateTo("http://localhost:2368/ghost/#/posts?type=draft");
+    const nombreEditado = await testController.navigateTo("http://35.244.81.193/ghost/#/posts?type=draft");
     //console.log("----------- "+nombreEditado);
     await testController.expect(true).ok();
 
