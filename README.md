@@ -375,11 +375,51 @@ Por favor ir al sitio: <br>
 https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/Resumen_Herramientas <br>
 
 
-# Kraken
-1. Ir a la carpeta de kraken y a la versión que desea correr las pruebas con cd src/kraken/v3.42 ó src/kraken/v4.44.0 <br>
+## Kraken
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Kraken)
+
+Cuando se integran estrategias de prueba como a priori y aleatorización con Faker en los escenarios de pruebas de Kraken, se crea un enfoque robusto y flexible para garantizar la calidad y la eficacia de las pruebas de software. A continuación, describo cómo se integran estas estrategias:
+
+Estrategia A Priori
+La estrategia a priori implica definir conjuntos de datos de prueba específicos basados en el conocimiento previo del sistema y sus posibles puntos de falla. Estos datos se eligen cuidadosamente para cubrir casos extremos, valores límite, y escenarios representativos del uso real de la aplicación. Esta estrategia es útil para validar la funcionalidad en condiciones conocidas y esperadas.
+
+Integración en los Escenarios de Kraken:
+
+Datos Específicos: Se usan datos a priori para probar funcionalidades específicas donde se conoce el resultado esperado. Por ejemplo, se pueden ingresar datos de usuario válidos o inválidos para probar la autenticación o la validación de formularios.
+Casos de Borde: Estos datos se utilizan para probar los límites del sistema, como el máximo número de caracteres en un campo de texto o valores extremos en campos numéricos.
+Estrategia Aleatoria con Faker
+La estrategia de aleatorización con Faker implica la generación de datos de prueba aleatorios y realistas. Esta técnica es útil para simular una amplia gama de posibles entradas de usuario y para descubrir errores que no se identifican con conjuntos de datos predefinidos.
+
+Integración en los Escenarios de Kraken:
+
+Generación de Datos Aleatorios: Se utiliza Faker para generar datos como nombres de usuario, direcciones de correo electrónico, contraseñas, etc., de manera aleatoria. Esto ayuda a realizar pruebas de estrés y a verificar la robustez del sistema ante entradas impredecibles.
+Pruebas de Estrés y Volumen: Los datos aleatorios se usan para llenar formularios o realizar acciones en masa, lo que ayuda a identificar problemas de rendimiento o errores en la gestión de grandes volúmenes de datos.
+Integración de Estrategias en los Escenarios de Pruebas de Kraken
+Definición de Escenarios: Se definen escenarios de prueba en Kraken que utilizan tanto datos a priori como aleatorios. Por ejemplo, un escenario podría utilizar datos a priori para probar un flujo de trabajo específico y luego aplicar datos aleatorios para probar el mismo flujo bajo condiciones variables.
+
+Automatización de Pruebas: Se implementan scripts de prueba automatizados en Kraken que utilizan ambas estrategias. Estos scripts pueden invocar datos específicos para ciertas pruebas y utilizar la generación aleatoria de datos para otras.
+
+Cobertura de Pruebas: La combinación de ambas estrategias asegura una amplia cobertura de pruebas, desde casos de uso específicos y predecibles hasta escenarios imprevistos y extremos.
+
+En resumen, la integración de estrategias a priori y aleatorias en los escenarios de pruebas de Kraken permite una evaluación exhaustiva y eficaz del software, asegurando que este pueda manejar tanto escenarios predecibles como impredecibles en el entorno de producción.
+
+#Listado Escenarios de pruea con estrategia A PRIORI y ALEATOREO (FAKER)
+* scenario  46
+* scenario  47
+* scenario  48 
+* scenario  49
+* scenario  50
+* scenario  51
+* scenario  52
+* scenario  53
+* scenario  54
+* scenario  55
+
+  
+1. Ir a la carpeta de kraken y a la versión que desea correr las pruebas <br>
 2. Instalar las dependencias del Package.json ejecutar npm install  <br>
 3. Modificar el archivo de configuración para asignar los valores deseados por el usuario. El archivo se encuentra en: src/kraken/properties.json. Es importante notar que acá se encuentran las credenciales a usar en los escenarios de prueba, por lo que es necesario que sean modificados de acorde a las preferencias del tester. <br>
-4. Copiar el escenario deseado para ejecutar en el archivo RunningScenario.feature (Los escenarios se encuentran en src/kraken/v3.42/features/scenarios ó src/kraken/v4.44.0/features/scenarios).<br>
+4. Copiar el escenario deseado para ejecutar en el archivo RunningScenario.feature (Los escenarios se encuentran en src/kraken/v3.42/features/scenarios ó src/kraken/features/scenarios).<br>
 
 Ejecutar el comando npx kraken-node run.<br>
 
@@ -387,13 +427,11 @@ Ejecutar el comando npx kraken-node run.<br>
 # Versiones de Ghosts (Docker)
 
 Para crear estas pruebas utilizamos  las  versiones <br>
- * La v3.42 y la v4.44.0. <br>
+ * la v4.44.0. <br>
 Si va a utilizar docker debe correr los contenedores, es necesario tener instalado Docker en su maquina y en el consola o terminar ejecutar los siguientes comandos. <br>
 
 Es Importante aclarar que la url debe ser lo que indicada para la maquina donde desea correr el Docker.<br>
 Ejemplo si va a correrlas de manera local se deberia cambiar machine-ip por localhost 
-
-*docker run -d -e url=http://machine-ip:3001 -p 3001:2368 --name ghost_3.42 ghost:3.42
 
 *docker run -d -e url=http://machine-ip:4440 -p 4440:2368 --name ghost_4.44.0 ghost:4.44.0
 
