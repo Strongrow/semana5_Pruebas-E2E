@@ -215,34 +215,35 @@ deberia quedar simiale a este
 
 # Correr escenarios de pruebas en  Cypress (Semana 7)
 Las pruebas se realizaron a una version de Ghost que se encuentra en http://35.244.81.193/ghost<br>
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/14d01898-fd16-488f-94a5-109a6453edec)
 
 Primer paso<br>
 Debe tener instalado <br>
-node version 16 o superior (Recomendada 18)<br>
-npm version 6 o superior<br>
-git<br>
-Cypress ver (https://docs.cypress.io/guides/getting-started/installing-cypress)<br>
+* node version 16 o superior (Recomendada 18)<br>
+* npm version 6 o superior<br>
+* git<br>
+* Cypress ver (https://docs.cypress.io/guides/getting-started/installing-cypress)<br>
 
 Segundo paso<br>
 
-Clone el repositorio, (solo si lo ha hecho) con el comando git clone https://github.com/Strongrow/semana7_Pruebas-E2E.git desde la terminal del su maquina
+* Clone el repositorio, (solo si lo ha hecho) con el comando git clone https://github.com/Strongrow/semana5_Pruebas-E2E.git desde la terminal del su maquina
 y en la termina desde la ubicacion del directorio instalado use el comando npm install<br>
 
 Tercer paso<br>
 
-Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen 
+* Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen 
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/f8772036-c03d-4c12-a4ba-3903b4ad84ed)
 
 
 Cuarto paso<br>
 
-Para correr la pruebas con Cypress verifique que en al archivo package.json se encuentre la linea "cypress:open": "cypress open"
+* Para correr la pruebas con Cypress verifique que en al archivo package.json se encuentre la linea "cypress:open": "cypress open"
 debe ver se asi
 "scripts": { "test": "echo "Error: no test specified" && exit 1", "cypress:open": "cypress open" },
 
-Posterior a ello use el comando npm run cypress:open<br>
+* Posterior a ello use el comando npm run cypress:open<br>
 
-o el comando npx cypress run si desea ver las pruebas en la consola de la terminal<br>
+* o el comando npx cypress run si desea ver las pruebas en la consola de la terminal<br>
 # Reporte Manual
 Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
 
