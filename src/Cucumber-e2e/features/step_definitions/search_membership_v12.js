@@ -30,7 +30,7 @@ When('Dar click en el boton Login v12', async function () {
 
 
 When('Ir al menu profile v12', async function () {
-    await testController.navigateTo(ghostPage.ghost.url_profile());
+    await testController.navigateTo(ghostPage.ghost.url_profile_2());
     await testController.wait(4000);
    
 });

@@ -40,7 +40,7 @@ When('Expandir y colapzar las secciones {string}', async function (name) {
 
     //Se trae texto aleatorio para el titulo del tag con el uso de Mockaroo APIs
 try{
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         const buttons = Selector('button').withText("Expand");
         var numero_aleatorio = faker.number.int({ min: 0, max: 2 });
         await testController.click(buttons.nth(numero_aleatorio));

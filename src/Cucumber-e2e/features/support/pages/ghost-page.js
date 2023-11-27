@@ -19,20 +19,23 @@ exports.ghost = {
         return 'http://35.244.81.193/ghost/';
     },
     url_4_44: function () {
-        return 'http://localhost:3002/ghost';
+        return 'http://35.244.81.193/ghost';
     },
     url_5_73: function () {
-        return 'http://localhost:2368/ghost';
+        return 'http://35.244.81.193/ghost';
     },
     url_profile: function () {
         return 'http://35.244.81.193/ghost/#/settings/staff/user';
     },
+    url_profile_2: function () {
+        return 'http://35.244.81.193/ghost/#/settings/staff/';
+    },
     url_integrations: function () {
-        return 'http://localhost:2368/ghost/#/settings/integrations';
+        return 'http://35.244.81.193/ghost/#/settings/integrations';
     },
 
     url_integrations_new: function () {
-        return 'http://localhost:2368/ghost/#/settings/integrations/new';
+        return 'http://35.244.81.193/ghost/#/settings/integrations/new';
     },
 
     campo_nombre_integracion: function () {
