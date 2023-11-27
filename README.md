@@ -7,6 +7,57 @@ Publio Diaz p.diazp@uniandes.edu.co <br>
 Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
 Lucas Omar Blandon   l.blandon@uniandes.edu.co <br>
 
+# Correr escenarios de pruebas en  Cypress (Semana 7)
+Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/14d01898-fd16-488f-94a5-109a6453edec)
+
+Primer paso<br>
+Debe tener instalado <br>
+* node version 16 o superior (Recomendada 18)<br>
+* npm version 6 o superior<br>
+* git<br>
+* Cypress ver (https://docs.cypress.io/guides/getting-started/installing-cypress)<br>
+
+Segundo paso<br>
+
+* Clone el repositorio, (solo si lo ha hecho) con el comando git clone https://github.com/Strongrow/semana5_Pruebas-E2E.git desde la terminal del su maquina
+y en la termina desde la ubicacion del directorio instalado use el comando npm install<br>
+
+Tercer paso<br>
+* Paso recomendado para los escenarios del 91 al 117
+* Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen <br>
+
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/f8772036-c03d-4c12-a4ba-3903b4ad84ed)
+
+* La carpeta utils tiene en su interior, 4 carpetas que usadas para agregar archivos de audio, texto, video e imagen los cuales son necesarios para las pruebas con la estrategia Apriori<br>
+* Si agrega archivo a estas carpetas, escriba el nombre de los mismos en el archivo MOCK_DATA.json <br>
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/9b5c62f1-4df0-4711-b43c-0592d554fa56)
+
+Ejemplo<br>
+* solo edite la parte fin de cada ruta(es decir escriba el nombre del archivo que usted agrego)<br> 
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/2e0747eb-4377-4108-b269-86fe4a0060cb)
+
+
+Cuarto paso<br>
+
+* Para correr la pruebas con Cypress verifique que en al archivo package.json se encuentre la linea "cypress:open": "cypress open"
+debe ver se asi
+"scripts": { "test": "echo "Error: no test specified" && exit 1", "cypress:open": "cypress open" },
+
+* Posterior a ello use el comando npm run cypress:open<br>
+
+* o el comando npx cypress run si desea ver las pruebas en la consola de la terminal<br>
+
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Cypress)
+* En la carpeta Apriori (Ver imagen)se encuentran los escenarios construidos con esa estrategia, los cuales utlizan los archivos Json como referencia en los escenarios <br> <br>
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/4c0d484b-d88d-4414-aed8-e1b2b6c0a453)
+
+* En la carpeta pageObjectPatron (Ver imagen)se encuentra el patron que interactua con los escenarios para la estrategia Apriori y Aleatoria representadas los archivos DatafakerPage.js( aleatorio dinámico) y DataMockPage.js (Datos Apriori)<br> <br>
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/c2ca342d-d9f5-4e3f-95ea-44e6eadcd0e1)
+
+<hr>
+
+
 # Video Semana 6 VRT 
    https://youtu.be/nt6aLvvrR8E
 # Funcionalidades 
@@ -212,54 +263,6 @@ deberia quedar simiale a este
   "email": "pruebas@uniandes.edu.co",
   "password": "123456789="
 } 
-
-# Correr escenarios de pruebas en  Cypress (Semana 7)
-Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
-![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/14d01898-fd16-488f-94a5-109a6453edec)
-
-Primer paso<br>
-Debe tener instalado <br>
-* node version 16 o superior (Recomendada 18)<br>
-* npm version 6 o superior<br>
-* git<br>
-* Cypress ver (https://docs.cypress.io/guides/getting-started/installing-cypress)<br>
-
-Segundo paso<br>
-
-* Clone el repositorio, (solo si lo ha hecho) con el comando git clone https://github.com/Strongrow/semana5_Pruebas-E2E.git desde la terminal del su maquina
-y en la termina desde la ubicacion del directorio instalado use el comando npm install<br>
-
-Tercer paso<br>
-* Paso recomendado para los escenarios del 91 al 117
-* Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen <br>
-
-![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/f8772036-c03d-4c12-a4ba-3903b4ad84ed)
-
-* La carpeta utils tiene en su interior, 4 carpetas que usadas para agregar archivos de audio, texto, video e imagen los cuales son necesarios para las pruebas con la estrategia Apriori<br>
-* Si agrega archivo a estas carpetas, escriba el nombre de los mismos en el archivo MOCK_DATA.json <br>
-![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/9b5c62f1-4df0-4711-b43c-0592d554fa56)
-
-Ejemplo<br>
-* solo edite la parte fin de cada ruta(es decir escriba el nombre del archivo que usted agrego)<br> 
-![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/2e0747eb-4377-4108-b269-86fe4a0060cb)
-
-
-Cuarto paso<br>
-
-* Para correr la pruebas con Cypress verifique que en al archivo package.json se encuentre la linea "cypress:open": "cypress open"
-debe ver se asi
-"scripts": { "test": "echo "Error: no test specified" && exit 1", "cypress:open": "cypress open" },
-
-* Posterior a ello use el comando npm run cypress:open<br>
-
-* o el comando npx cypress run si desea ver las pruebas en la consola de la terminal<br>
-
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Cypress)
-* En la carpeta Apriori (Ver imagen)se encuentran los escenarios construidos con esa estrategia, los cuales utlizan los archivos Json como referencia en los escenarios <br> <br>
-![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/4c0d484b-d88d-4414-aed8-e1b2b6c0a453)
-
-* En la carpeta pageObjectPatron (Ver imagen)se encuentra el patron que interactua con los escenarios para la estrategia Apriori y Aleatoria representadas los archivos DatafakerPage.js( aleatorio dinámico) y DataMockPage.js (Datos Apriori)<br> <br>
-![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/c2ca342d-d9f5-4e3f-95ea-44e6eadcd0e1)
 
 # Reporte Manual
 Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
