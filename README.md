@@ -230,7 +230,7 @@ Segundo paso<br>
 y en la termina desde la ubicacion del directorio instalado use el comando npm install<br>
 
 Tercer paso<br>
-
+* Paso recomendado para los escenarios del 91 al 117
 * Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen <br>
 
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/f8772036-c03d-4c12-a4ba-3903b4ad84ed)
@@ -240,7 +240,7 @@ Tercer paso<br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/9b5c62f1-4df0-4711-b43c-0592d554fa56)
 
 Ejemplo<br>
-* solo edite la parte fin de cada ruta<br> 
+* solo edite la parte fin de cada ruta(es decir escriba el nombre del archivo que usted agrego)<br> 
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/2e0747eb-4377-4108-b269-86fe4a0060cb)
 
 
