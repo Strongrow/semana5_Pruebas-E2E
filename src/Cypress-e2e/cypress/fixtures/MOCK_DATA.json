@@ -1,0 +1,18 @@
+{
+  "Html": "<h1>Codigo generado en html</h1>",
+  "Markdown": "## Título ### Subtítulo Este es un ejemplo de texto que da entrada a una lista genérica de elementos: - Elemento 1 - Elemento 2 - Elemento 3 ",
+  "Divider": "Texto dividido Lorem Ipsum lorem lorem ",
+  "video": "cypress/utils/loadVideo/semana4.mp4",
+  "file": "cypress/utils/loadFile/pruebasAutomatizadas.txt",
+  "audio": "cypress/utils/loadAudio/audio.ogg",
+  "image": "cypress/utils/loadImage/imagenCypress.jpg",
+  "youtube": "https://www.youtube.com/watch?v=nt6aLvvrR8E&t=4s",
+  "xtwitter":"https://twitter.com/home",
+  "linkOther":"https://www.msn.com/es-co/noticias/nacional/grave-accidente-de-tr%C3%A1nsito-dej%C3%B3-una-persona-muerta-a-las-afueras-de-bogot%C3%A1-esto-es-lo-que-se-sabe/ar-AA1kwsrD?ocid=msedgntp&cvid=f36fd71a330a4375a8606f2df9132007&ei=9",
+  "vimeo": "https://vimeo.com/857182953",
+  "codepen": "https://codepen.io/",
+  "spotify":  "https://open.spotify.com/intl-es/track/2EjXfH91m7f8HiJN1yQg97?si=3fb4b81123e5437f",
+  "soundcloud": "https://soundcloud.com/david-castro-234530338/a-mi-modo-20-david-castro?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  "Date":"23:59",
+  "DateError":"90:g0"
+}

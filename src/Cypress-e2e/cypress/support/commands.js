@@ -22,3 +22,7 @@ Cypress.Commands.add("getByType", (selector)=>{
     return cy.get(`[type=${selector}]`);
 });
 
+Cypress.Commands.add("getDataK", (selector)=>{
+    return cy.get(`[data-kg=${selector}]`);
+});
+

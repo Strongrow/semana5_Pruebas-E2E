@@ -1,5 +1,4 @@
 {
-    "v3": "http://localhost:3411/ghost/",
-    "v4": "http://localhost:3002/ghost"
-   
-  }
+    "v5": "http://35.244.81.193/ghost",
+    "local": "http://localhost:2368/ghost"  
+}
