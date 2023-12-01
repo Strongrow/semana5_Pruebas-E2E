@@ -21,9 +21,9 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.1    [Video Semana 6 VRT](#Video-Semana-6-VRT)**
 ### **3.2    [Funcionalidades](#Funcionalidades)**
 ### **3.2.1    [Versiones de Ghosts (Docker)](#Versiones-de-Ghosts)**
-### **3.2.2    [Escenarios de Prueba tratados - Ghost v3.42.](#Escenarios-de-Prueba-tratados-Ghost-v3.42.)**
-### **3.2.3    [Escenarios de Prueba tratados - Ghost v4.44.](#Escenarios-de-Prueba-tratados-Ghost-v4.44)**
-### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost.](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
+### **3.2.2    [Escenarios de Prueba tratados - Ghost v3.42](#Escenarios-de-Prueba-tratados-Ghost-v3.42.)**
+### **3.2.3    [Escenarios de Prueba tratados - Ghost v4.44](#Escenarios-de-Prueba-tratados-Ghost-v4.44)**
+### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
 ### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
 
