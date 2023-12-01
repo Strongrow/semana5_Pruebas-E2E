@@ -187,7 +187,7 @@ En los 12 escenario se usarón las dos estrategias.
 
 # Semana 6
 
-# Integración de Gherkin y CucumberJS sobre Ghost
+## Integración de Gherkin y CucumberJS sobre Ghost
 
 Integración de pruebas VRT sobre Ghost versión 4.44 sobre la Versión 5.73 con Cucumber.
 
