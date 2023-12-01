@@ -11,8 +11,8 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ## **1.    [Entrega final](#Entrega-final).**
 ## **2.    [Semana 7.](#Semana-7.)**
 ### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
-#### **2.1.1    [Correr escenarios de pruebas en Cypress.](#Correr-escenarios-de-pruebas-en-Cypress)**
-#### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas)**
+#### **2.1.1    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
+#### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas)**
 #### **2.1.3    [Correr escenarios de pruebas en CucumberJS.](#Correr-escenarios-de-pruebas-en-CucumberJS)**
 #### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas-cucumber)**
 #### **2.1.5    [Escenarios Kraken.](#)**
@@ -30,9 +30,9 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 # Herramientas Utilizadas para pruebas automatizadas para esta entrega
 Para la entrega de estos Escenario nuestro grupo utilizo la version de Ghost 5.73 que tenemos alojada en http://35.244.81.193/ghost<br>
 Sobre esta version se realizaron las prueba en Kraken, Cucumber y Cypress
-# Correr escenarios de pruebas en  Cypress 
-Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/14d01898-fd16-488f-94a5-109a6453edec)
+# Correr escenarios de pruebas en Cypress 
+Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
 
 Primer paso<br>
 Debe tener instalado <br>
@@ -71,7 +71,7 @@ debe ver se asi
 
 * o el comando npx cypress run si desea ver las pruebas en la consola de la terminal<br>
 
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Cypress)
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas
 * En la carpeta Apriori (Ver imagen)se encuentran los escenarios construidos con esa estrategia, los cuales utlizan los archivos Json como referencia en los escenarios <br> <br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/4c0d484b-d88d-4414-aed8-e1b2b6c0a453)
 
