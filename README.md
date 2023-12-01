@@ -10,7 +10,7 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
 ## **2.    [Semana 7.](#Semana-7.)**
-### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega.](#)**
+### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
 #### **2.1.1    [Correr escenarios de pruebas en Cypress.](#Correr-escenarios-de-pruebas-en-Cypress)**
 #### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas)**
 #### **2.1.3    [Correr escenarios de pruebas en CucumberJS.](#Correr-escenarios-de-pruebas-en-CucumberJS)**
@@ -27,6 +27,9 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
 ### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
 
+# Herramientas Utilizadas para pruebas automatizadas para esta entrega
+Para la entrega de estos Escenario nuestro grupo utilizo la version de Ghost 5.73 que tenemos alojada en http://35.244.81.193/ghost<br>
+Sobre esta version se realizaron las prueba en Kraken, Cucumber y Cypress
 # Correr escenarios de pruebas en  Cypress 
 Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/14d01898-fd16-488f-94a5-109a6453edec)
