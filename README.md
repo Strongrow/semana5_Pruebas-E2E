@@ -9,13 +9,13 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
-## **2.    [Semana 7.](#Semana-7.)**
+## **2.    [Semana 7](#Semana-7)**
 ### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
 #### **2.1.1    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
 #### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas)**
 #### **2.1.3    [Correr escenarios de pruebas en CucumberJS](#Correr-escenarios-de-pruebas-en-CucumberJS)**
 #### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas cucumber.](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas-cucumber)**
-#### **2.1.5  [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken](#Descripción-de-las-estrategias-usadas-y-cómo-se-integranestas-estrategias-en-los-escenarios-de-pruebas-Kraken)**
+#### **2.1.5  [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas-Kraken)**
 ## **3  [Semana 6.](#Semana-6)**
 ### **3.1    [Video Semana 6 VRT](#Video-Semana-6-VRT)**
 ### **3.2    [Funcionalidades](#Funcionalidades)**
@@ -26,6 +26,8 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
 ### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
 
+# Entrega final
+# Semana-7
 # Herramientas Utilizadas para pruebas automatizadas para esta entrega
 Para la entrega de estos Escenario nuestro grupo utilizo la version de Ghost 5.73 que tenemos alojada en http://35.244.81.193/ghost<br>
 Sobre esta version se realizaron las prueba en Kraken, Cucumber y Cypress
