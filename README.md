@@ -521,8 +521,8 @@ deberia quedar simiale a este
   "password": "123456789="
 } 
 
-<a name="Entrega final"/>
-## Entrega final
+<a name="Entrega-final"/>
+## Entrega final.
 lOREM IPSUM 
 
 # Reporte Manual
