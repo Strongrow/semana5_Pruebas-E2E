@@ -332,7 +332,7 @@ Ejemplo de salida:
 
 7. Manejo de Calendario: Esta funcionalidad habilita la gestión de publicaciones que se encuentran en estado de borrador y publicado, facilitando su organización y edición. <br>
 
-# Escenarios de Prueba tratados - Ghost v3.42
+# Escenarios de Prueba tratados Ghost v3.42
 
 Escenario de prueba PE001: Ingreso con usuario correcto y clave correcta <br>
   * En este esenario, el usuario ingresa la credenciasles de correo y contraseña correctas. 
