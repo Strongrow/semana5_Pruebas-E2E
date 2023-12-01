@@ -8,8 +8,8 @@ node_modules
 cypress/videos
 
 # Added empty reports folder
-reports/*
-!reports/.gitkeep
+#reports/*
+#!reports/.gitkeep
 
 #VSCode files
 .vscode/*
