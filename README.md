@@ -24,8 +24,8 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.2.3    [Escenarios de Prueba tratados Ghost v4 44](#Escenarios-de-Prueba-tratados-Ghost-v4-44)**
 ### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
-### **3.4    [Kraken](Kraken)
-### **3.5    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)
+### **3.4    [Kraken](#Kraken)**
+### **3.5    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
 ### **3.6    [Reporte Manual](#Reporte-Manual)**
 ### **3.7    [Pros y contras de las herramientas](#Pros-y-contras-de-las-herramientas)**
 
