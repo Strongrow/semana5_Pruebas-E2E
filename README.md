@@ -15,14 +15,13 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 #### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas)**
 #### **2.1.3    [Correr escenarios de pruebas en CucumberJS](#Correr-escenarios-de-pruebas-en-CucumberJS)**
 #### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas cucumber.](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas-cucumber)**
-#### **2.1.5    [Escenarios Kraken](#Escenarios Kraken)**
-#### **2.1.6  [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken](#Descripción-de-las-estrategias-usadas-y-cómo-se-integranestas-estrategias-en-los-escenarios-de-pruebas-Kraken)**
+#### **2.1.5  [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken](#Descripción-de-las-estrategias-usadas-y-cómo-se-integranestas-estrategias-en-los-escenarios-de-pruebas-Kraken)**
 ## **3  [Semana 6.](#Semana-6)**
 ### **3.1    [Video Semana 6 VRT](#Video-Semana-6-VRT)**
 ### **3.2    [Funcionalidades](#Funcionalidades)**
 ### **3.2.1    [Versiones de Ghosts Docker](#Versiones-de-Ghosts-Docker)**
-### **3.2.2    [Escenarios de Prueba tratados Ghost v3.42](#Escenarios-de-Prueba-tratados-Ghost-v3.42)**
-### **3.2.3    [Escenarios de Prueba tratados Ghost v4.44](#Escenarios-de-Prueba-tratados-Ghost-v4.44)**
+### **3.2.2    [Escenarios de Prueba tratados Ghost v3 42](#Escenarios-de-Prueba-tratados-Ghost-v3-42)**
+### **3.2.3    [Escenarios de Prueba tratados Ghost v4 44](#Escenarios-de-Prueba-tratados-Ghost-v4-44)**
 ### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
 ### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
@@ -146,8 +145,7 @@ Ejemplo:<br>
 
 <hr>
 
-# Escenarios Kraken
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken
 
 Cuando se integran estrategias de prueba como a priori y aleatorización con Faker en los escenarios de pruebas de Kraken, se crea un enfoque robusto y flexible para garantizar la calidad y la eficacia de las pruebas de software. A continuación, describo cómo se integran estas estrategias:
 
@@ -335,7 +333,7 @@ Ejemplo de salida:
 
 7. Manejo de Calendario: Esta funcionalidad habilita la gestión de publicaciones que se encuentran en estado de borrador y publicado, facilitando su organización y edición. <br>
 
-# Escenarios de Prueba tratados Ghost v3.42
+# Escenarios de Prueba tratados Ghost v3 42
 
 Escenario de prueba PE001: Ingreso con usuario correcto y clave correcta <br>
   * En este esenario, el usuario ingresa la credenciasles de correo y contraseña correctas. 
@@ -401,7 +399,7 @@ Escenario de prueba PE019: Editar un Post en Borrador <br>
 Escenario de prueba PE020: Crear y publicar un post con tag <br>
   * En este escenario, El usuario crea un post, agrega un tag y pubica el post , y el resultado esperado es que cree el post en estado publicado.<br>
 
-# Escenarios de Prueba tratados Ghost v4.44
+# Escenarios de Prueba tratados Ghost v4 44
 
 Escenario de prueba PE021: Muestra el menu filtro por Autor de la seccion Draft <br>
   * En este escenario el usuuario valida el correcto de pliegue del la opcion del menu del filtro por Autor y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
