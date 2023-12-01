@@ -9,6 +9,9 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
+### **1.1  [Video](#Video)**
+### **1.2  [Documento estrategia de pruebas](#Documento-estrategia-de-pruebas)**
+### **1.3  [Instrucciones para ejecutar la estrategia de pruebas](#Instrucciones-para-ejecutar-la-estrategia-de-pruebas)**
 ## **2.    [Semana 7](#Semana-7)**
 ### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
 #### **2.1.1    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
@@ -24,12 +27,16 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.2.3    [Escenarios de Prueba tratados Ghost v4 44](#Escenarios-de-Prueba-tratados-Ghost-v4-44)**
 ### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost)**
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
+### **3.3.1    [Descarga de contenido y ejecución de test](#Descarga-de-contenido-y-ejecución-de-test)**
 ### **3.4    [Kraken](#Kraken)**
 ### **3.5    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
 ### **3.6    [Reporte Manual](#Reporte-Manual)**
 ### **3.7    [Pros y contras de las herramientas](#Pros-y-contras-de-las-herramientas)**
 
 # Entrega final
+# Video
+# Documento estrategia de pruebas
+# Instrucciones para ejecutar la estrategia de pruebas
 # Semana-7
 # Herramientas Utilizadas para pruebas automatizadas para esta entrega
 Para la entrega de estos Escenario nuestro grupo utilizo la version de Ghost 5.73 que tenemos alojada en http://35.244.81.193/ghost<br>
