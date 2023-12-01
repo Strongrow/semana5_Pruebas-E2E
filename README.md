@@ -27,7 +27,7 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.4    [Kraken](Kraken)
 ### **3.5    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)
 ### **3.6    [Reporte Manual](#Reporte-Manual)**
-### **3.7    [Pros y contras de las herramientas](Pros-y-contras-de-las-herramientas)**
+### **3.7    [Pros y contras de las herramientas](#Pros-y-contras-de-las-herramientas)**
 
 # Entrega final
 # Semana-7
