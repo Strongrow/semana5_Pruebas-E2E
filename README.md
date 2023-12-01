@@ -24,7 +24,10 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **3.2.3    [Escenarios de Prueba tratados Ghost v4 44](#Escenarios-de-Prueba-tratados-Ghost-v4-44)**
 ### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
-### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
+### **3.4    [Kraken](Kraken)
+### **3.5    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)
+### **3.6    [Reporte Manual](#Reporte-Manual)**
+### **3.7    [Pros y contras de las herramientas](Pros-y-contras-de-las-herramientas)**
 
 # Entrega final
 # Semana-7
@@ -475,7 +478,7 @@ En la sección https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/publio pued
 
 Para algunos test es necesario que digite el id del componente antes de ejecutar la prueba. Esto es debido a que para algunos test, la prueba depende de los datos de prueba para su ejecución.
 
-# Correr escenarios de pruebas en  Cypress (Semana 6).
+# Correr escenarios de pruebas en Cypress
 
 Primer paso <br>
 Asegurese de tener instalado <br>
@@ -524,9 +527,7 @@ deberia quedar simiale a este
   "password": "123456789="
 } 
 
-<a name="Entrega-final"/>
-## Entrega final.
-lOREM IPSUM 
+
 
 # Reporte Manual
 Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
