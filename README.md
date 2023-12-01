@@ -13,10 +13,10 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 ### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
 #### **2.1.1    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
 #### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas)**
-#### **2.1.3    [Correr escenarios de pruebas en CucumberJS.](#Correr-escenarios-de-pruebas-en-CucumberJS)**
-#### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas-cucumber)**
-#### **2.1.5    [Escenarios Kraken.](#)**
-### **2.2  [Herramientas Utilizadas para pruebas automatizadas para esta entrega.](#)**
+#### **2.1.3    [Correr escenarios de pruebas en CucumberJS](#Correr-escenarios-de-pruebas-en-CucumberJS)**
+#### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas cucumber.](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas-cucumber)**
+#### **2.1.5    [Escenarios Kraken](#Escenarios Kraken)**
+#### **2.1.6  [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken](#Descripción-de-las-estrategias-usadas-y-cómo-se-integranestas-estrategias-en-los-escenarios-de-pruebas-Kraken)**
 ## **3  [Semana 6.](#Semana-6)**
 ### **3.1    [Video Semana 6 VRT](#Video-Semana-6-VRT)**
 ### **3.2    [Funcionalidades](#Funcionalidades)**
@@ -80,7 +80,7 @@ debe ver se asi
 
 <hr>
 
-# Correr escenarios de pruebas en  CucumberJS (Semana 7)
+# Correr escenarios de pruebas en CucumberJS
 
 Integración de pruebas usando diferentes técnicas de creación de datos sobre Ghost con Cucumber.
 
@@ -93,7 +93,7 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 5. Usar el comando `npm install` 
 6. Fijarse que se instalen las dependencias de lo contrario instalarlas manualmente con npm install Libreria.
 
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Cucumber)
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas cucumber
 ## Lista de casos de prueba
 
 ## Nota
@@ -146,8 +146,8 @@ Ejemplo:<br>
 
 <hr>
 
-
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Kraken)
+# Escenarios Kraken
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas
 
 Cuando se integran estrategias de prueba como a priori y aleatorización con Faker en los escenarios de pruebas de Kraken, se crea un enfoque robusto y flexible para garantizar la calidad y la eficacia de las pruebas de software. A continuación, describo cómo se integran estas estrategias:
 
@@ -275,7 +275,7 @@ O Puede ejecutar el bat "pruebas_vrt.bat". En este bat lo unico que se debe camb
 cd C:\Users\diazpd\Documents\MISO\Pruebas_automatizadas\semana5\entrega_semana_5\semana5_Pruebas-E2E\ghost-e2e-cucumber <br> 
 para poner la ruta donde este alojado el proyecto descargado.
 
-## Documentation
+## Documentación
 
 Algunas imagenes de guia: <br>
 Ghost 5.73 
@@ -401,7 +401,7 @@ Escenario de prueba PE019: Editar un Post en Borrador <br>
 Escenario de prueba PE020: Crear y publicar un post con tag <br>
   * En este escenario, El usuario crea un post, agrega un tag y pubica el post , y el resultado esperado es que cree el post en estado publicado.<br>
 
-# Escenarios de Prueba tratados - Ghost v4.44
+# Escenarios de Prueba tratados Ghost v4.44
 
 Escenario de prueba PE021: Muestra el menu filtro por Autor de la seccion Draft <br>
   * En este escenario el usuuario valida el correcto de pliegue del la opcion del menu del filtro por Autor y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
