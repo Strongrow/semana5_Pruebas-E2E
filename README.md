@@ -5,7 +5,18 @@
 Javier Andrés Acevedo  ja.acevedob1@uniandes.edu.co <br>
 Publio Diaz p.diazp@uniandes.edu.co <br>
 Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
-Lucas Omar Blandon   l.blandon@uniandes.edu.co <br>
+Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
+
+[[_TOC_]]
+## **1.  Entrega Final.**
+## **2.  Semana 7.**
+## **2.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
+## **3  Semana 6.**
+## **3.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
+
+
+
+
 
 # Correr escenarios de pruebas en  Cypress (Semana 7)
 Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
