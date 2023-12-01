@@ -7,14 +7,22 @@ Publio Diaz p.diazp@uniandes.edu.co <br>
 Juan Camilo Rodríguez  jc.rodriguez2345@uniandes.edu.co <br>
 Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
-[[_TOC_]]
-## **1.  Entrega Final.**
+# Tabla de Contenido 
+## **1.  [Entrega final](#Entrega-final).**
 ## **2.  Semana 7.**
-## **2.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
+### **2.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
+### **2.2  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
 ## **3  Semana 6.**
-## **3.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
+### **3.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
 
 
+- [Insertar HN](#insertar-hn).
+- [Cursivas](#cursivas).
+- [Negrilla](#negrilla).
+
+ 
+  
+[Emphasis](#emphasis)  
 
 
 
@@ -511,9 +519,33 @@ deberia quedar simiale a este
   "email": "pruebas@uniandes.edu.co",
   "password": "123456789="
 } 
+...snip... 
+<a name="Entrega final"/>
+## Entrega final
 
+...snip...    
+<a name="headers"/>
+## Headers
 # Reporte Manual
 Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
+
+### Insertar HN
+
+```plain
+# Esto es un H1
+## Esto es un H2
+### Esto es un H3
+#### Esto es un H4
+
+```
+
+### Cursivas
+
+`*Esto es cursiva*`
+
+### Negrilla
+
+`**Esto es negrilla**`
 
    Ejemplo de paths a ingresar (Windows):
 
