@@ -9,22 +9,16 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 # Tabla de Contenido 
 ## **1.  [Entrega final](#Entrega-final).**
-## **2.  Semana 7.**
+## **2.  [Semana 7.](#Semana-7.)**
 ### **2.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
-### **2.2  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
+#### **2.1.1 Correr escenarios de pruebas en Cypress (Semana 7)**
+#### **2.1.1.1 Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.**
+#### **2.1.2 Correr escenarios de pruebas en CucumberJS (Semana 7)**
+#### **2.1.3 Escenarios Kraken (Semana 7)**
+
+### -**2.2  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
 ## **3  Semana 6.**
 ### **3.1  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
-
-
-- [Insertar HN](#insertar-hn).
-- [Cursivas](#cursivas).
-- [Negrilla](#negrilla).
-
- 
-  
-[Emphasis](#emphasis)  
-
-
 
 # Correr escenarios de pruebas en  Cypress (Semana 7)
 Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
@@ -519,36 +513,9 @@ deberia quedar simiale a este
   "email": "pruebas@uniandes.edu.co",
   "password": "123456789="
 } 
-...snip... 
+
 <a name="Entrega final"/>
 ## Entrega final
-
-...snip...    
-<a name="headers"/>
-## Headers
 # Reporte Manual
 Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
-
-### Insertar HN
-
-```plain
-# Esto es un H1
-## Esto es un H2
-### Esto es un H3
-#### Esto es un H4
-
-```
-
-### Cursivas
-
-`*Esto es cursiva*`
-
-### Negrilla
-
-`**Esto es negrilla**`
-
-   Ejemplo de paths a ingresar (Windows):
-
-   * C:\.\src\Cypress-e2e\cypress\screenshots\2023-11-19\v3.42.0
-   * C:\.\src\Cypress-e2e\cypress\screenshots\2023-11-19\v4.44.0
 
