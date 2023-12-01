@@ -10,22 +10,22 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
 ## **2.    [Semana 7.](#Semana-7.)**
-### **2.1    Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
-#### **2.1.1    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
-#### **2.1.2    Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.**
-#### **2.1.3    Correr escenarios de pruebas en CucumberJS**
-#### **2.1.4    Escenarios Kraken**
-
-### **2.2  Herramientas Utilizadas para pruebas automatizadas para esta entrega.**
-## **3  Semana 6.**
-### **3.1    Video Semana 6 VRT**
-### **3.2    Funcionalidades**
-### **3.2.1    Versiones de Ghosts (Docker)**
-### **3.2.2    Escenarios de Prueba tratados - Ghost v3.42**
-### **3.2.3    Escenarios de Prueba tratados - Ghost v4.44**
-### **3.3    Integración de Gherkin y CucumberJS sobre Ghost.**
-### **3.3.1    Instalación y preparación de datos iniciales**
-### **3.3.2    Ejecutar los tests**
+### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega.](#)**
+#### **2.1.1    [Correr escenarios de pruebas en Cypress.](#Correr-escenarios-de-pruebas-en-Cypress)**
+#### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas)**
+#### **2.1.3    [Correr escenarios de pruebas en CucumberJS.](#Correr-escenarios-de-pruebas-en-CucumberJS)**
+#### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas-cucumber)**
+#### **2.1.5    [Escenarios Kraken.](#)**
+### **2.2  [Herramientas Utilizadas para pruebas automatizadas para esta entrega.](#)**
+## **3  [Semana 6.](#Semana-6)**
+### **3.1    [Video Semana 6 VRT](#Video-Semana-6-VRT)**
+### **3.2    [Funcionalidades](#Funcionalidades)**
+### **3.2.1    [Versiones de Ghosts (Docker)](#Versiones-de-Ghosts)**
+### **3.2.2    [Escenarios de Prueba tratados - Ghost v3.42.](#Escenarios-de-Prueba-tratados-Ghost-v3.42.)**
+### **3.2.3    [Escenarios de Prueba tratados - Ghost v4.44.](#Escenarios-de-Prueba-tratados-Ghost-v4.44)**
+### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost.](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
+### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
+### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
 
 # Correr escenarios de pruebas en  Cypress 
 Las pruebas se realizaron a una version de Ghost alojada por muestro equipo  en  google Cloud y  que se encuentra en http://35.244.81.193/ghost<br>
@@ -472,7 +472,7 @@ En la sección https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/publio pued
 
 Para algunos test es necesario que digite el id del componente antes de ejecutar la prueba. Esto es debido a que para algunos test, la prueba depende de los datos de prueba para su ejecución.
 
-# Correr escenarios de pruebas en  Cypress (Semana 6)
+# Correr escenarios de pruebas en  Cypress (Semana 6).
 
 Primer paso <br>
 Asegurese de tener instalado <br>
