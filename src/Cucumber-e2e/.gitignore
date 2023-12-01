@@ -2,7 +2,7 @@
 node_modules
 
 # Screenshots
-reports/screenshots
+#reports/screenshots
 
 # Videos
 cypress/videos
