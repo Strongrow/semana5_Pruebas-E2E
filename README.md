@@ -40,6 +40,12 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 
 # Instrucciones para ejecutar la estrategia de pruebas
+Paso uno descargue el repositorio 
+paso dos instale PlayWright con el siguiente comando 
+npm init playwright@latest
+Paso tres para ejecutar las pruebas utilice la siguiente info  
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/8eaa8b2d-0789-489a-9d29-2168311417eb)
+
 # Semana-7
 # Herramientas Utilizadas para pruebas automatizadas para esta entrega
 Para la entrega de estos Escenario nuestro grupo utilizo la version de Ghost 5.73 que tenemos alojada en http://35.244.81.193/ghost<br>
