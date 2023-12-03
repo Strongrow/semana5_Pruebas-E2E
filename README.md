@@ -36,7 +36,8 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 # Entrega final
 # Video
 # Resultados estrategia de pruebas semana uno
-# PlayWright Resultados[ResultadosPlaywright.zip](https://github.com/Strongrow/semana5_Pruebas-E2E/files/13537945/ResultadosPlaywright.zip)
+### **PlayWright Resultados [ResultadosPlaywright.zip](https://github.com/Strongrow/semana5_Pruebas-E2E/files/13537945/ResultadosPlaywright.zip)**
+### **Cypress Resultados [EntregaFinal-Semana1.zip](https://github.com/Strongrow/semana5_Pruebas-E2E/files/13537982/EntregaFinal-Semana1.zip)**
 
 
 # Instrucciones para ejecutar la estrategia de pruebas
