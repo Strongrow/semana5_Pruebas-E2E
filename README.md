@@ -40,6 +40,7 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 
 # Instrucciones para ejecutar la estrategia de pruebas
+#### Escenarios Playwrigth
 Paso uno descargue el repositorio <br>
 paso dos instale PlayWright con el siguiente comando<br> 
 npm init playwright@latest<br>
