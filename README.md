@@ -1,4 +1,4 @@
-## PRUEBAS AUTOMATIZADAS GRUPO 25 
+## PRUEBAS AUTOMATIZADAS 
 
 # Autores
 
@@ -10,7 +10,7 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
 ### **1.1  [Video](#Video)**
-### **1.2  [Documento estrategia de pruebas](#Documento-estrategia-de-pruebas)**
+### **1.2  [Resultados estrategia de pruebas semana uno](#Resultados-estrategia-de-pruebas-semana-uno)**
 ### **1.3  [Instrucciones para ejecutar la estrategia de pruebas](#Instrucciones-para-ejecutar-la-estrategia-de-pruebas)**
 ## **2.    [Semana 7](#Semana-7)**
 ### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
@@ -35,7 +35,10 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 # Entrega final
 # Video
-# Documento estrategia de pruebas
+# Resultados estrategia de pruebas semana uno
+# PlayWright Resultados[ResultadosPlaywright.zip](https://github.com/Strongrow/semana5_Pruebas-E2E/files/13537945/ResultadosPlaywright.zip)
+
+
 # Instrucciones para ejecutar la estrategia de pruebas
 # Semana-7
 # Herramientas Utilizadas para pruebas automatizadas para esta entrega
