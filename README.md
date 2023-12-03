@@ -9,8 +9,8 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
-### **1.1  [Video](#Video)**
-https://youtu.be/Gk1s-YlmxUU
+### **1.1  [Video](#Video)  https://youtu.be/Gk1s-YlmxUU**
+
 ### **1.2  [Resultados estrategia de pruebas semana uno](#Resultados-estrategia-de-pruebas-semana-uno)**
 ### **1.3  [Instrucciones para ejecutar la estrategia de pruebas](#Instrucciones-para-ejecutar-la-estrategia-de-pruebas)**
 ## **2.    [Semana 7](#Semana-7)**
