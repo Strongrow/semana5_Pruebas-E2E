@@ -1,4 +1,4 @@
-## PRUEBAS AUTOMATIZADAS GRUPO 25 
+## PRUEBAS AUTOMATIZADAS 
 
 # Autores
 
@@ -9,24 +9,45 @@ Lucas Omar Blandón P   l.blandon@uniandes.edu.co <br>
 
 # Tabla de Contenido 
 ## **1.    [Entrega final](#Entrega-final).**
-## **2.    [Semana 7.](#Semana-7.)**
+### **1.1  [Video](#Video)**
+### **1.2  [Resultados estrategia de pruebas semana uno](#Resultados-estrategia-de-pruebas-semana-uno)**
+### **1.3  [Instrucciones para ejecutar la estrategia de pruebas](#Instrucciones-para-ejecutar-la-estrategia-de-pruebas)**
+## **2.    [Semana 7](#Semana-7)**
 ### **2.1    [Herramientas Utilizadas para pruebas automatizadas para esta entrega](#Herramientas-Utilizadas-para-pruebas-automatizadas-para-esta-entrega)**
 #### **2.1.1    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
 #### **2.1.2    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas)**
-#### **2.1.3    [Correr escenarios de pruebas en CucumberJS.](#Correr-escenarios-de-pruebas-en-CucumberJS)**
-#### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.](#Descripción-de-las-estrategias-usadas-cucumber)**
-#### **2.1.5    [Escenarios Kraken.](#)**
-### **2.2  [Herramientas Utilizadas para pruebas automatizadas para esta entrega.](#)**
+#### **2.1.3    [Correr escenarios de pruebas en CucumberJS](#Correr-escenarios-de-pruebas-en-CucumberJS)**
+#### **2.1.4    [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas cucumber.](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas-cucumber)**
+#### **2.1.5  [Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken](#Descripción-de-las-estrategias-usadas-y-cómo-se-integran-estas-estrategias-en-los-escenarios-de-pruebas-Kraken)**
 ## **3  [Semana 6.](#Semana-6)**
 ### **3.1    [Video Semana 6 VRT](#Video-Semana-6-VRT)**
 ### **3.2    [Funcionalidades](#Funcionalidades)**
 ### **3.2.1    [Versiones de Ghosts Docker](#Versiones-de-Ghosts-Docker)**
-### **3.2.2    [Escenarios de Prueba tratados Ghost v3.42](#Escenarios-de-Prueba-tratados-Ghost-v3.42)**
-### **3.2.3    [Escenarios de Prueba tratados Ghost v4.44](#Escenarios-de-Prueba-tratados-Ghost-v4.44)**
-### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost.)**
+### **3.2.2    [Escenarios de Prueba tratados Ghost v3 42](#Escenarios-de-Prueba-tratados-Ghost-v3-42)**
+### **3.2.3    [Escenarios de Prueba tratados Ghost v4 44](#Escenarios-de-Prueba-tratados-Ghost-v4-44)**
+### **3.3    [Integración de Gherkin y CucumberJS sobre Ghost](#Integración-de-Gherkin-y-CucumberJS-sobre-Ghost)**
 ### **3.3.1    [Instalación y preparación de datos iniciales](#Instalación-y-preparación-de-datos-iniciales)**
-### **3.3.2    [Ejecutar los tests](#Ejecutar-los-tests)**
+### **3.3.1    [Descarga de contenido y ejecución de test](#Descarga-de-contenido-y-ejecución-de-test)**
+### **3.4    [Kraken](#Kraken)**
+### **3.5    [Correr escenarios de pruebas en Cypress](#Correr-escenarios-de-pruebas-en-Cypress)**
+### **3.6    [Reporte Manual](#Reporte-Manual)**
+### **3.7    [Pros y contras de las herramientas](#Pros-y-contras-de-las-herramientas)**
 
+# Entrega final
+# Video
+# Resultados estrategia de pruebas semana uno
+# PlayWright Resultados[ResultadosPlaywright.zip](https://github.com/Strongrow/semana5_Pruebas-E2E/files/13537945/ResultadosPlaywright.zip)
+
+
+# Instrucciones para ejecutar la estrategia de pruebas
+#### Escenarios Playwrigth
+Paso uno descargue el repositorio <br>
+paso dos instale PlayWright con el siguiente comando<br> 
+npm init playwright@latest<br>
+Paso tres para ejecutar las pruebas utilice la siguiente info<br>  
+![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/8eaa8b2d-0789-489a-9d29-2168311417eb)
+
+# Semana-7
 # Herramientas Utilizadas para pruebas automatizadas para esta entrega
 Para la entrega de estos Escenario nuestro grupo utilizo la version de Ghost 5.73 que tenemos alojada en http://35.244.81.193/ghost<br>
 Sobre esta version se realizaron las prueba en Kraken, Cucumber y Cypress
@@ -48,7 +69,7 @@ y en la termina desde la ubicacion del directorio instalado use el comando npm i
 
 Tercer paso<br>
 * Paso recomendado para los escenarios del 91 al 117
-* Agregue a la raiz del proyecto la carpeta utils, para ello debe descargarla y proceder a descomprimirla en la raiz como se muestra en la imagen <br>
+* Agregue a la raiz del proyecto la carpeta utils, para ello debe crearla en la raiz como se muestra en la imagen <br>
 
 ![image](https://github.com/Strongrow/semana5_Pruebas-E2E/assets/142680425/f8772036-c03d-4c12-a4ba-3903b4ad84ed)
 
@@ -80,7 +101,7 @@ debe ver se asi
 
 <hr>
 
-# Correr escenarios de pruebas en  CucumberJS (Semana 7)
+# Correr escenarios de pruebas en CucumberJS
 
 Integración de pruebas usando diferentes técnicas de creación de datos sobre Ghost con Cucumber.
 
@@ -93,7 +114,7 @@ Integración de pruebas usando diferentes técnicas de creación de datos sobre 
 5. Usar el comando `npm install` 
 6. Fijarse que se instalen las dependencias de lo contrario instalarlas manualmente con npm install Libreria.
 
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Cucumber)
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas cucumber
 ## Lista de casos de prueba
 
 ## Nota
@@ -146,8 +167,7 @@ Ejemplo:<br>
 
 <hr>
 
-
-# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas.(Escenarios Kraken)
+# Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas Kraken
 
 Cuando se integran estrategias de prueba como a priori y aleatorización con Faker en los escenarios de pruebas de Kraken, se crea un enfoque robusto y flexible para garantizar la calidad y la eficacia de las pruebas de software. A continuación, describo cómo se integran estas estrategias:
 
@@ -275,7 +295,7 @@ O Puede ejecutar el bat "pruebas_vrt.bat". En este bat lo unico que se debe camb
 cd C:\Users\diazpd\Documents\MISO\Pruebas_automatizadas\semana5\entrega_semana_5\semana5_Pruebas-E2E\ghost-e2e-cucumber <br> 
 para poner la ruta donde este alojado el proyecto descargado.
 
-## Documentation
+## Documentación
 
 Algunas imagenes de guia: <br>
 Ghost 5.73 
@@ -335,7 +355,7 @@ Ejemplo de salida:
 
 7. Manejo de Calendario: Esta funcionalidad habilita la gestión de publicaciones que se encuentran en estado de borrador y publicado, facilitando su organización y edición. <br>
 
-# Escenarios de Prueba tratados Ghost v3.42
+# Escenarios de Prueba tratados Ghost v3 42
 
 Escenario de prueba PE001: Ingreso con usuario correcto y clave correcta <br>
   * En este esenario, el usuario ingresa la credenciasles de correo y contraseña correctas. 
@@ -401,7 +421,7 @@ Escenario de prueba PE019: Editar un Post en Borrador <br>
 Escenario de prueba PE020: Crear y publicar un post con tag <br>
   * En este escenario, El usuario crea un post, agrega un tag y pubica el post , y el resultado esperado es que cree el post en estado publicado.<br>
 
-# Escenarios de Prueba tratados - Ghost v4.44
+# Escenarios de Prueba tratados Ghost v4 44
 
 Escenario de prueba PE021: Muestra el menu filtro por Autor de la seccion Draft <br>
   * En este escenario el usuuario valida el correcto de pliegue del la opcion del menu del filtro por Autor y se espera que se despligue de manera correcta y finalmente cierra sesión.<br>
@@ -475,7 +495,7 @@ En la sección https://github.com/Strongrow/semana5_Pruebas-E2E/wiki/publio pued
 
 Para algunos test es necesario que digite el id del componente antes de ejecutar la prueba. Esto es debido a que para algunos test, la prueba depende de los datos de prueba para su ejecución.
 
-# Correr escenarios de pruebas en  Cypress (Semana 6).
+# Correr escenarios de pruebas en Cypress
 
 Primer paso <br>
 Asegurese de tener instalado <br>
@@ -524,9 +544,7 @@ deberia quedar simiale a este
   "password": "123456789="
 } 
 
-<a name="Entrega-final"/>
-## Entrega final.
-lOREM IPSUM 
+
 
 # Reporte Manual
 Si se quiere ejecutar el reporte de regresión visual de manera manual, se necesitan realizar el siguiente porceso de Cypress. Se debe ejecutar los siguiente comandos cd src/reportScript y node script.js, y luego seguir las instrucciones en pantalla donde se pedirá incluir los paths de las carpetas que contienen los screenshots. (Los Paths deben de ser absolutos, no relativos). Después de esto, se generará un html que puede ser accedido desde cualquier navegador para poder ser visualizado.
